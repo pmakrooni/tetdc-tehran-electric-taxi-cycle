@@ -44,7 +44,7 @@ A single stage can be re-run, e.g. `python run_all.py baselines`.
 | `experiments/` | comparison with official cycles, fleet simulation, growth scenarios |
 | `analysis/` | trip-chain parameters, sensitivity, statistics, validation |
 | `uncertainty/` | Monte-Carlo and Sobol' analysis |
-| `figures/` | script that draws every article figure from the outputs (`figures/output/`) |
+| `figures/` | scripts that draw every article figure and the graphical abstract from the outputs (`figures/output/`) |
 | `data/raw/` | OpenStreetMap extracts used for the article, zipped (unpacked and checked by `scripts/download_data.py`) |
 | `results_reference/` | verified outputs used in the article |
 | `VERIFICATION.md` | record of the independent re-execution |

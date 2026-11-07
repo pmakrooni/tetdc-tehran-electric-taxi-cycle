@@ -1,5 +1,9 @@
 # Change log
 
+## Unreleased
+
+* New `figures/make_graphical_abstract.py`: graphical abstract (130 x 50 mm) drawn from the reference outputs; added to `run_all.py`.
+
 ## 1.2.0 — 7 November 2026
 
 * `uncertainty/uq_ensemble.py`: adds a between-/within-cycle variance split (law of total variance) for each pool; all earlier keys of `uq_ensemble.json` are unchanged.

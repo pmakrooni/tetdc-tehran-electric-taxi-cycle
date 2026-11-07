@@ -34,6 +34,7 @@ STAGES = [
     ("uq_ensemble",  "uncertainty/uq_ensemble.py"),             # 11 construction runs x 10,000 paired draws
     ("figures",      "figures/make_figures.py"),                 # article figures -> figures/output/
     ("uq_figures",   "figures/make_uq_figures.py"),              # Fig. 6 (with bias correction) and Fig. 8
+    ("graphical_abstract", "figures/make_graphical_abstract.py"), # graphical abstract (130 x 50 mm)
 ]
 
 def main():
