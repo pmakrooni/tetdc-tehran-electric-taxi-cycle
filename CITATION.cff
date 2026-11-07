@@ -12,6 +12,7 @@ authors:
   # further co-authors to be added
 version: 1.2.0
 date-released: "2026-11-07"
+doi: "10.5281/zenodo.24039688"
 license: MIT
 repository-code: "https://github.com/pmakrooni/tetdc-tehran-electric-taxi-cycle"
 keywords: [electric taxi, driving cycle, digital twin, energy consumption, topography, charging infrastructure, Tehran]

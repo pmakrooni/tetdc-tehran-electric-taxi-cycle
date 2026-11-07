@@ -1,5 +1,9 @@
 # TETDC — Tehran Electric Taxi Driving Cycle
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24039688.svg)](https://doi.org/10.5281/zenodo.24039688)
+
+Archived at Zenodo: all versions [10.5281/zenodo.24039688](https://doi.org/10.5281/zenodo.24039688); version 1.2.0, used for the article, [10.5281/zenodo.24039689](https://doi.org/10.5281/zenodo.24039689).
+
 Code, data and verified results for the article
 **"Decomposing the Electric-Taxi Range Gap in Tehran with an Open-Data Digital Twin"** (Pouria Makrooni et al., submitted to *Transportation Research Part D: Transport and Environment*).
 
