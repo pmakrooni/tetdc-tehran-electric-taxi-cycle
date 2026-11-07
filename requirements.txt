@@ -1,0 +1,11 @@
+# Versions used for the verified run (Python 3.12.3). Newer versions should work;
+# verify_outputs.py will report any numerical change.
+numpy==2.4.4
+pandas==3.0.2
+pyarrow==25.0.1
+scipy==1.17.1
+scikit-learn==1.8.0
+rasterio==1.5.2
+networkx==3.6.1
+wltp==0.1.2a0
+SALib==1.6.0

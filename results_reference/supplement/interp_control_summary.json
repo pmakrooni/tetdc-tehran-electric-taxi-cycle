@@ -1,0 +1,74 @@
+{
+ "trips": 54,
+ "a_rms": {
+  "doppler": 0.6667551041169074,
+  "pos1_mean": 0.7040724041550166,
+  "pos1_vs_pos1_median_pct": 0.0,
+  "pos5_mean": 0.6714718703503507,
+  "pos5_vs_pos1_median_pct": -3.7872725128420486,
+  "pos10_mean": 0.6096124864330527,
+  "pos10_vs_pos1_median_pct": -12.08523828429147,
+  "pos15_mean": 0.5353055374833869,
+  "pos15_vs_pos1_median_pct": -22.18438977760352
+ },
+ "P_idle": {
+  "doppler": 18.959099918586794,
+  "pos1_mean": 16.195527772736355,
+  "pos1_vs_pos1_median_pct": 0.0,
+  "pos5_mean": 17.208057275430473,
+  "pos5_vs_pos1_median_pct": 6.51157231902223,
+  "pos10_mean": 15.597491214545917,
+  "pos10_vs_pos1_median_pct": -1.713578631699641,
+  "pos15_mean": 13.194205019248864,
+  "pos15_vs_pos1_median_pct": -18.894083814354488
+ },
+ "kwh": {
+  "doppler": 23.68582118964589,
+  "pos1_mean": 24.25710455143031,
+  "pos1_vs_pos1_median_pct": 0.0,
+  "pos5_mean": 23.677808940166635,
+  "pos5_vs_pos1_median_pct": -1.7178020259005824,
+  "pos10_mean": 22.936337784383507,
+  "pos10_vs_pos1_median_pct": -4.200078930567372,
+  "pos15_mean": 22.19206342685543,
+  "pos15_vs_pos1_median_pct": -6.867274707046379
+ },
+ "v_mean": {
+  "doppler": 34.103044572988544,
+  "pos1_mean": 34.67573671466003,
+  "pos1_vs_pos1_median_pct": 0.0,
+  "pos5_mean": 34.52696932221008,
+  "pos5_vs_pos1_median_pct": -0.45147773300861116,
+  "pos10_mean": 34.293680302843796,
+  "pos10_vs_pos1_median_pct": -1.315162814390579,
+  "pos15_mean": 34.036388913046046,
+  "pos15_vs_pos1_median_pct": -2.2141798681792837
+ },
+ "energy_bias_15s_by_dynamics": {
+  "low": {
+   "a_rms_range": [
+    0.5095726375183116,
+    0.6404953584416343
+   ],
+   "median_bias_pct": -6.785912596267018,
+   "n": 18
+  },
+  "mid": {
+   "a_rms_range": [
+    0.6435253518174806,
+    0.71737180247041
+   ],
+   "median_bias_pct": -6.7048122940728225,
+   "n": 18
+  },
+  "high": {
+   "a_rms_range": [
+    0.7184711299948368,
+    0.9763936101119196
+   ],
+   "median_bias_pct": -9.791885375582577,
+   "n": 18
+  }
+ },
+ "corr_bias15_vs_arms": -0.1840695612457396
+}

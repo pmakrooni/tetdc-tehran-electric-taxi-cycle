@@ -1,0 +1,308 @@
+{
+ "T1_const_speed": {
+  "30": {
+   "kWh_100km": 14.11,
+   "lit_band": [
+    10.5,
+    14.5
+   ],
+   "in_band": true
+  },
+  "50": {
+   "kWh_100km": 13.52,
+   "lit_band": [
+    11.0,
+    14.5
+   ],
+   "in_band": true
+  },
+  "70": {
+   "kWh_100km": 15.21,
+   "lit_band": [
+    12.5,
+    16.5
+   ],
+   "in_band": true
+  },
+  "90": {
+   "kWh_100km": 18.25,
+   "lit_band": [
+    14.0,
+    18.5
+   ],
+   "in_band": true
+  },
+  "110": {
+   "kWh_100km": 22.41,
+   "lit_band": [
+    17.0,
+    22.5
+   ],
+   "in_band": true
+  },
+  "curve": {
+   "30": 14.11,
+   "40": 13.41,
+   "50": 13.52,
+   "60": 14.17,
+   "70": 15.21,
+   "80": 16.58,
+   "90": 18.25,
+   "100": 20.2,
+   "110": 22.41
+  }
+ },
+ "T2_air_density": {
+  "90kmh": {
+   "tehran_1190m": 18.25,
+   "sea_level": 19.59
+  },
+  "delta_pct": 6.84,
+  "note": "Tehran altitude cuts aero drag; drag share is small at 90 km/h"
+ },
+ "T3_grade": {
+  "constant": {
+   "0%": 13.52,
+   "2%": 29.31,
+   "4%": 45.07,
+   "-2%": 0.52,
+   "-4%": -7.75
+  },
+  "mixed_pm4_net0": 18.68,
+  "note": "asymmetric: +grade loss > -grade regen recovery (eta_regen<1)"
+ },
+ "T4_range": {
+  "usable_kWh": 85.6,
+  "at_16": 535.0,
+  "at_18.5": 463.0,
+  "at_20": 428.0,
+  "context": "km range; KMC E-TAX companion fleet vehicle declares 402 km (smaller pack, ref [109])"
+ },
+ "T5_charge_20_80_min": {
+  "by_station_kW": {
+   "60kW": 52.2,
+   "90kW": 35.0,
+   "120kW": 26.5,
+   "160kW": 20.7,
+   "340kW": 20.2
+  },
+  "documented_anchor": "<= 45 min [108]",
+  "model_at_90kW": 35.0,
+  "note": "a 90 kW plateau reproduces the documented <=45 min anchor; Tehran stations span 60-340 kW DC"
+ },
+ "T6_real_corridors": {
+  "آزادگان_بزرگراه": {
+   "length_km": 21.21,
+   "elev_start_end_m": [
+    1090.0,
+    1178.0
+   ],
+   "kWh_100km_southbound": 17.77,
+   "kWh_100km_northbound": 8.33,
+   "roundtrip_kWh_100km": 13.05
+  },
+  "آزادی_خیابان": {
+   "length_km": 4.71,
+   "elev_start_end_m": [
+    1181.0,
+    1183.0
+   ],
+   "kWh_100km_southbound": 21.43,
+   "kWh_100km_northbound": 7.98,
+   "roundtrip_kWh_100km": 14.7
+  },
+  "اشرفی_اصفهانی_بزرگراه": {
+   "length_km": 6.3,
+   "elev_start_end_m": [
+    1564.0,
+    1264.0
+   ],
+   "kWh_100km_southbound": -9.76,
+   "kWh_100km_northbound": 47.86,
+   "roundtrip_kWh_100km": 19.05
+  },
+  "امام_علی_بزرگراه": {
+   "length_km": 26.2,
+   "elev_start_end_m": [
+    1060.0,
+    1619.0
+   ],
+   "kWh_100km_southbound": 33.37,
+   "kWh_100km_northbound": -2.45,
+   "roundtrip_kWh_100km": 15.46
+  },
+  "انقلاب_خیابان": {
+   "length_km": 2.5,
+   "elev_start_end_m": [
+    1202.0,
+    1186.0
+   ],
+   "kWh_100km_southbound": 16.04,
+   "kWh_100km_northbound": 9.24,
+   "roundtrip_kWh_100km": 12.64
+  },
+  "جلال_آل_احمد_بزرگراه": {
+   "length_km": 4.29,
+   "elev_start_end_m": [
+    1281.0,
+    1298.0
+   ],
+   "kWh_100km_southbound": 22.28,
+   "kWh_100km_northbound": 10.41,
+   "roundtrip_kWh_100km": 16.34
+  },
+  "رسالت_شهید_سلیمانی_بزرگراه": {
+   "length_km": 20.29,
+   "elev_start_end_m": [
+    1394.0,
+    1621.0
+   ],
+   "kWh_100km_southbound": 17.96,
+   "kWh_100km_northbound": 17.24,
+   "roundtrip_kWh_100km": 17.6
+  },
+  "شریعتی_خیابان": {
+   "length_km": 5.96,
+   "elev_start_end_m": [
+    1596.0,
+    1355.0
+   ],
+   "kWh_100km_southbound": -8.15,
+   "kWh_100km_northbound": 54.33,
+   "roundtrip_kWh_100km": 23.09
+  },
+  "صدر_بابایی_بزرگراه": {
+   "length_km": 22.25,
+   "elev_start_end_m": [
+    1637.0,
+    1477.0
+   ],
+   "kWh_100km_southbound": 11.8,
+   "kWh_100km_northbound": 22.37,
+   "roundtrip_kWh_100km": 17.08
+  },
+  "مدرس_بزرگراه": {
+   "length_km": 8.67,
+   "elev_start_end_m": [
+    1245.0,
+    1569.0
+   ],
+   "kWh_100km_southbound": 44.02,
+   "kWh_100km_northbound": -4.22,
+   "roundtrip_kWh_100km": 19.9
+  },
+  "نیایش_بزرگراه": {
+   "length_km": 2.91,
+   "elev_start_end_m": [
+    1539.0,
+    1478.0
+   ],
+   "kWh_100km_southbound": 5.84,
+   "kWh_100km_northbound": 27.28,
+   "roundtrip_kWh_100km": 16.56
+  },
+  "همت_بزرگراه": {
+   "length_km": 10.87,
+   "elev_start_end_m": [
+    1408.0,
+    1339.0
+   ],
+   "kWh_100km_southbound": 10.98,
+   "kWh_100km_northbound": 17.78,
+   "roundtrip_kWh_100km": 14.38
+  },
+  "ولی_عصر_خیابان": {
+   "length_km": 17.6,
+   "elev_start_end_m": [
+    1122.0,
+    1628.0
+   ],
+   "kWh_100km_southbound": 37.87,
+   "kWh_100km_northbound": -3.86,
+   "roundtrip_kWh_100km": 17.01
+  },
+  "ولی_عصر_شمالی_خیابان": {
+   "length_km": 1.07,
+   "elev_start_end_m": [
+    1116.0,
+    1123.0
+   ],
+   "kWh_100km_southbound": 17.96,
+   "kWh_100km_northbound": 8.17,
+   "roundtrip_kWh_100km": 13.06
+  },
+  "چمران_بزرگراه": {
+   "length_km": 11.84,
+   "elev_start_end_m": [
+    1580.0,
+    1226.0
+   ],
+   "kWh_100km_southbound": 0.35,
+   "kWh_100km_northbound": 31.85,
+   "roundtrip_kWh_100km": 16.1
+  },
+  "کاشانی_بزرگراه": {
+   "length_km": 16.39,
+   "elev_start_end_m": [
+    1368.0,
+    1311.0
+   ],
+   "kWh_100km_southbound": 15.28,
+   "kWh_100km_northbound": 25.85,
+   "roundtrip_kWh_100km": 20.57
+  }
+ },
+ "T7_sensitivity_50kmh_flat": {
+  "curb_mass_kg": {
+   "values": [
+    2095,
+    2175,
+    2295
+   ],
+   "kWh_100km_at_50": [
+    13.26,
+    13.52,
+    13.92
+   ]
+  },
+  "C_r": {
+   "values": [
+    0.008,
+    0.009,
+    0.012
+   ],
+   "kWh_100km_at_50": [
+    12.73,
+    13.52,
+    15.89
+   ]
+  },
+  "Cd": {
+   "values": [
+    0.27,
+    0.29,
+    0.32
+   ],
+   "kWh_100km_at_50": [
+    13.33,
+    13.52,
+    13.82
+   ]
+  },
+  "P_aux_summer": {
+   "values": [
+    1200,
+    1800,
+    2500
+   ],
+   "kWh_100km_at_50": [
+    12.33,
+    13.52,
+    14.92
+   ]
+  }
+ },
+ "T7_base": 13.52,
+ "seed": 42,
+ "model_version": "ev_model.py v1 (stage 4)"
+}

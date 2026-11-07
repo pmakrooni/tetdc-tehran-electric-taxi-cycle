@@ -1,0 +1,124 @@
+{
+ "season_summer": {
+  "S0_flat": {
+   "kWh_per_100km": 22.07,
+   "energy_kWh_cycle": 3.246,
+   "soc_end": 0.9621,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 388.0
+  },
+  "S1_up_3.28pct": {
+   "kWh_per_100km": 46.21,
+   "energy_kWh_cycle": 6.796,
+   "soc_end": 0.9206,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 185.0
+  },
+  "S2_down_3.28pct": {
+   "kWh_per_100km": 1.9,
+   "energy_kWh_cycle": 0.279,
+   "soc_end": 0.9967,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 4512.0
+  },
+  "S3_roundtrip_mix": {
+   "kWh_per_100km": 24.19,
+   "energy_kWh_cycle": 3.558,
+   "soc_end": 0.9584,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 354.0
+  },
+  "S4_valiasr_updown": {
+   "kWh_per_100km": 24.12,
+   "energy_kWh_cycle": 3.548,
+   "soc_end": 0.9585,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 355.0
+  }
+ },
+ "season_winter": {
+  "S0_flat": {
+   "kWh_per_100km": 21.35,
+   "energy_kWh_cycle": 3.139,
+   "soc_end": 0.9633,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 401.0
+  },
+  "S1_up_3.28pct": {
+   "kWh_per_100km": 45.49,
+   "energy_kWh_cycle": 6.69,
+   "soc_end": 0.9218,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 188.0
+  },
+  "S2_down_3.28pct": {
+   "kWh_per_100km": 1.17,
+   "energy_kWh_cycle": 0.172,
+   "soc_end": 0.998,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 7303.0
+  },
+  "S3_roundtrip_mix": {
+   "kWh_per_100km": 23.47,
+   "energy_kWh_cycle": 3.451,
+   "soc_end": 0.9597,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 365.0
+  },
+  "S4_valiasr_updown": {
+   "kWh_per_100km": 23.4,
+   "energy_kWh_cycle": 3.441,
+   "soc_end": 0.9598,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 366.0
+  }
+ },
+ "season_shoulder": {
+  "S0_flat": {
+   "kWh_per_100km": 17.36,
+   "energy_kWh_cycle": 2.553,
+   "soc_end": 0.9702,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 493.0
+  },
+  "S1_up_3.28pct": {
+   "kWh_per_100km": 41.5,
+   "energy_kWh_cycle": 6.103,
+   "soc_end": 0.9287,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 206.0
+  },
+  "S2_down_3.28pct": {
+   "kWh_per_100km": -2.81,
+   "energy_kWh_cycle": -0.414,
+   "soc_end": 0.9999,
+   "distance_km": 14.71,
+   "range_km_if_sustained": null
+  },
+  "S3_roundtrip_mix": {
+   "kWh_per_100km": 19.48,
+   "energy_kWh_cycle": 2.865,
+   "soc_end": 0.9665,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 439.0
+  },
+  "S4_valiasr_updown": {
+   "kWh_per_100km": 19.41,
+   "energy_kWh_cycle": 2.855,
+   "soc_end": 0.9666,
+   "distance_km": 14.71,
+   "range_km_if_sustained": 441.0
+  }
+ },
+ "cycle": {
+  "length_s": 1920,
+  "distance_km": 14.71,
+  "v_mean_kmh": 27.58,
+  "source": "TETDC_1.csv (microtrip_recomb, err 5.0%)"
+ },
+ "key_finding": {
+  "flat_summer_kWh_100km": 22.07,
+  "roundtrip_mix_kWh_100km": 24.19,
+  "topo_uplift_pct": 9.6
+ }
+}

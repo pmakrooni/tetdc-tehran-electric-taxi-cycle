@@ -1,0 +1,100 @@
+{
+ "seed": 42,
+ "markov": {
+  "states": 33,
+  "visited_states": 33,
+  "transitions": 7024830,
+  "matrix": "markov_matrix.npz"
+ },
+ "fleet_targets": {
+  "v_mean": 7.329,
+  "P_idle": 20.458,
+  "a_rms": 0.443,
+  "v_max": 31.368,
+  "a_max": 1.419,
+  "d_max": -1.495
+ },
+ "method_A_markov_mc": {
+  "best_seed": 342,
+  "composite_err_pct": 15.53,
+  "features": {
+   "v_mean": 7.596,
+   "v_max": 22.0,
+   "a_max": 1.5,
+   "d_max": -2.0,
+   "P_idle": 21.941,
+   "a_rms": 0.385,
+   "duration_s": 2092,
+   "distance_m": 15891.0
+  }
+ },
+ "method_B_microtrip_recombination": {
+  "iterations": 1500,
+  "composite_err_pct": 4.97,
+  "n_microtrips_used": 9,
+  "features": {
+   "v_mean": 7.66,
+   "v_max": 30.719,
+   "a_max": 1.414,
+   "d_max": -1.636,
+   "P_idle": 20.521,
+   "a_rms": 0.384,
+   "duration_s": 1920,
+   "distance_m": 14706.849
+  }
+ },
+ "selected_method": "microtrip_recomb",
+ "selected": {
+  "features": {
+   "v_mean": 7.66,
+   "v_max": 30.719,
+   "a_max": 1.414,
+   "d_max": -1.636,
+   "P_idle": 20.521,
+   "a_rms": 0.384,
+   "duration_s": 1920,
+   "distance_m": 14706.849
+  },
+  "composite_err_pct": 4.97
+ },
+ "feature_comparison": [
+  {
+   "feature": "v_mean",
+   "target": 7.329,
+   "cycle": 7.66,
+   "rel_err_pct": 4.5
+  },
+  {
+   "feature": "v_max",
+   "target": 31.368,
+   "cycle": 30.719,
+   "rel_err_pct": 2.1
+  },
+  {
+   "feature": "a_max",
+   "target": 1.419,
+   "cycle": 1.414,
+   "rel_err_pct": 0.3
+  },
+  {
+   "feature": "d_max",
+   "target": 1.495,
+   "cycle": 1.636,
+   "rel_err_pct": 9.4
+  },
+  {
+   "feature": "P_idle",
+   "target": 20.458,
+   "cycle": 20.521,
+   "rel_err_pct": 0.3
+  },
+  {
+   "feature": "a_rms",
+   "target": 0.443,
+   "cycle": 0.384,
+   "rel_err_pct": 13.1
+  }
+ ],
+ "cycle_length_s": 1920,
+ "cycle_distance_km": 14.71
+}

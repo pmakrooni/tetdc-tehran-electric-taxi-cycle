@@ -1,0 +1,95 @@
+{
+  "source": "Copernicus DEM GLO-30 (DSM, 30 m) — AWS open bucket",
+  "tiles": [
+    "N35_00_E051_00",
+    "N35_00_E050_00"
+  ],
+  "node_elev_m": {
+    "min": 927.9,
+    "p5": 1028.2,
+    "median": 1197.5,
+    "p95": 1737.3,
+    "max": 2622.3
+  },
+  "network_grade_pct": {
+    "edges_with_grade": 497863,
+    "artefact_suspect_edges": 15768,
+    "length_weighted_mean_abs_grade": 3.28,
+    "p50_abs_grade": 1.7,
+    "p90_abs_grade": 11.31,
+    "p99_abs_grade": 25.46,
+    "max_abs_grade_kept": 30.0,
+    "share_len_grade_gt_4pct": 26.48,
+    "share_len_grade_gt_6pct": 16.46
+  },
+  "grade_by_highway_class": {
+    "residential": {
+      "length_km": 10687.5,
+      "mean_abs_grade_pct": 3.32,
+      "p90_abs_grade_pct": 10.86
+    },
+    "tertiary": {
+      "length_km": 2828.9,
+      "mean_abs_grade_pct": 3.21,
+      "p90_abs_grade_pct": 11.35
+    },
+    "secondary": {
+      "length_km": 1917.4,
+      "mean_abs_grade_pct": 3.3,
+      "p90_abs_grade_pct": 11.33
+    },
+    "trunk": {
+      "length_km": 1500.8,
+      "mean_abs_grade_pct": 2.71,
+      "p90_abs_grade_pct": 9.54
+    },
+    "unclassified": {
+      "length_km": 1461.3,
+      "mean_abs_grade_pct": 3.66,
+      "p90_abs_grade_pct": 15.4
+    },
+    "primary": {
+      "length_km": 1117.9,
+      "mean_abs_grade_pct": 2.86,
+      "p90_abs_grade_pct": 10.06
+    },
+    "trunk_link": {
+      "length_km": 541.8,
+      "mean_abs_grade_pct": 3.97,
+      "p90_abs_grade_pct": 13.18
+    },
+    "motorway": {
+      "length_km": 294.5,
+      "mean_abs_grade_pct": 3.26,
+      "p90_abs_grade_pct": 13.38
+    },
+    "living_street": {
+      "length_km": 163.4,
+      "mean_abs_grade_pct": 3.96,
+      "p90_abs_grade_pct": 12.26
+    },
+    "primary_link": {
+      "length_km": 118.5,
+      "mean_abs_grade_pct": 3.5,
+      "p90_abs_grade_pct": 11.73
+    },
+    "secondary_link": {
+      "length_km": 98.2,
+      "mean_abs_grade_pct": 3.77,
+      "p90_abs_grade_pct": 11.71
+    },
+    "motorway_link": {
+      "length_km": 89.9,
+      "mean_abs_grade_pct": 3.07,
+      "p90_abs_grade_pct": 9.92
+    },
+    "tertiary_link": {
+      "length_km": 47.0,
+      "mean_abs_grade_pct": 3.43,
+      "p90_abs_grade_pct": 11.58
+    }
+  },
+  "random_seed": 42,
+  "smoothing_window_m": 250.0,
+  "artefact_threshold_pct": 30.0
+}

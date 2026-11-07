@@ -1,0 +1,54 @@
+{
+  "vehicle": "GAC Aion V Plus — Tehran electric taxi fleet (1752 units delivered, ref [93])",
+  "parameter_provenance_policy": "Every parameter is tagged: DOCUMENTED (from project feasibility report / cited public sources), LITERATURE_TYPICAL (representative C-SUV BEV value with uncertainty range, explicitly NOT a measured Aion value), DERIVED (computed from documented anchors). No fabricated 'measured' data.",
+  "random_seed": 42,
+
+  "documented": {
+    "battery_gross_kWh": 93.0,
+    "battery_gross_kWh_source": "feasibility report line 462-463 citing [108] public technical specs",
+    "dc_fast_charge_20_80_min": 45,
+    "dc_fast_charge_source": "feasibility report line 463 citing [108]: '20 to 80 percent in less than 45 minutes'",
+    "fleet_units": 1752,
+    "fleet_source": "feasibility report [93] Feb 2025 (Esfand 1403) delivery ceremony",
+    "kmc_e_tax_reference_range_km": 402,
+    "kmc_source": "feasibility report [109] declared range (companion fleet vehicle, NOT modeled here)",
+    "tehran_mean_abs_grade_pct": 3.28,
+    "grade_source": "TETDC stage 2 DEM analysis (Copernicus GLO-30, this project)",
+    "tehran_altitude_m": 1190
+  },
+
+  "literature_typical": {
+    "curb_mass_kg": {"value": 1980, "range": [1900, 2100], "basis": "C-segment BEV SUV class (2-ton class)"},
+    "taxi_payload_kg": {"value": 195, "range": [120, 300], "basis": "driver 75 kg + ~1.6 avg passengers x 75 kg; taxi line operation can reach 300 kg at full load"},
+    "Cd": {"value": 0.29, "range": [0.27, 0.32], "basis": "C-SUV BEV drag coefficient"},
+    "frontal_area_m2": {"value": 2.65, "range": [2.5, 2.8], "basis": "C-SUV frontal area"},
+    "C_r": {"value": 0.009, "range": [0.008, 0.012], "basis": "low-rolling-resistance EV tires"},
+    "wheel_radius_m": {"value": 0.36, "range": [0.34, 0.38], "basis": "235/55R18-class tire"},
+    "gear_ratio": {"value": 9.5, "range": [8.0, 11.0], "basis": "single-speed BEV reduction"},
+    "motor_peak_power_kW": {"value": 150, "range": [135, 165], "basis": "Aion V Plus class front PMSM"},
+    "motor_max_regen_power_kW": {"value": 90, "range": [60, 120], "basis": "typical regen acceptance limit"},
+    "eta_motor_peak": {"value": 0.95, "range": [0.93, 0.96], "basis": "PMSM peak efficiency; load-dependent analytic map used"},
+    "eta_inverter_high_load": {"value": 0.97, "range": [0.96, 0.98], "basis": "Si-IGBT inverter"},
+    "eta_regen_wheel_to_batt": {"value": 0.70, "range": [0.55, 0.80], "basis": "round-trip-regen literature one-way equivalent"},
+    "P_aux_W": {
+      "summer": {"value": 1800, "range": [1200, 2500], "basis": "A/C critical for Tehran summers (prompt §11); heat-pump-class average"},
+      "winter": {"value": 1600, "range": [1000, 2500], "basis": "cabin heating average"},
+      "shoulder": {"value": 500, "range": [300, 700], "basis": "fan/lights/ECU baseline"}
+    },
+    "battery_usable_fraction": {"value": 0.92, "range": [0.88, 0.95], "basis": "BMS reserve typical NMC"},
+    "pack_nominal_V": {"value": 355, "range": [330, 400], "basis": "400V-class pack"},
+    "pack_R_int_ohm": {"value": 0.030, "range": [0.020, 0.045], "basis": "93 kWh NMC pack DC internal resistance"},
+    "v2x": "none"
+  },
+
+  "derived": {
+    "usable_kWh": 85.6,
+    "usable_note": "93.0 x 0.92",
+    "air_density_kg_m3": 1.03,
+    "air_density_note": "p = 101325*exp(-1190/8435) = 88.0 kPa; rho = p/(287*298.15 K) = 1.03 kg/m3 (13% below sea level 1.18) — Tehran altitude reduces aerodynamic drag",
+    "charge_avg_power_kW_20_80": 74.4,
+    "charge_note": "0.6 x 93 kWh / 0.75 h = 74.4 kW average during 20-80% session (consistent with documented 60-340 kW Tehran DC stations)",
+    "gross_mass_kg": 2175,
+    "gross_mass_note": "curb 1980 + payload 195"
+  }
+}

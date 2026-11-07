@@ -1,0 +1,14 @@
+# large public raw data: fetched and hash-checked by scripts/download_data.py
+data/raw/train.csv
+data/raw/*.zip
+!data/raw/osm_tehran_2026-09-11.zip
+data/raw/*.tif
+data/raw/*.osm
+# regenerated outputs
+data/processed/
+figures/output/
+__pycache__/
+*.pyc
+# supplementary open data and outputs: fetched by supplement/download_supplement_data.py
+data/supplement/
+results/supplement/

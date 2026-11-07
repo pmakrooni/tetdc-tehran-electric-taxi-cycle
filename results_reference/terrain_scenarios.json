@@ -1,0 +1,177 @@
+{
+ "grades": {
+  "lower": 0.0186,
+  "central": 0.0257,
+  "upper": 0.0328
+ },
+ "seasons": {
+  "summer": {
+   "flat": 22.07,
+   "roundtrip_lower": 22.72,
+   "roundtrip_central": 23.38,
+   "roundtrip_upper": 24.19,
+   "uphill_central": 40.9,
+   "downhill_central": 5.7,
+   "topo_lower": 0.65,
+   "topo_central": 1.31,
+   "topo_upper": 2.12,
+   "corridors": {
+    "ولی‌عصر (خیابان)": 24.12,
+    "چمران (بزرگراه)": 22.65,
+    "مدرس (بزرگراه)": 26.97,
+    "همت (بزرگراه)": 22.2,
+    "رسالت–شهید سلیمانی (بزرگراه)": 25.96,
+    "صدر–بابایی (بزرگراه)": 24.42,
+    "امام علی (بزرگراه)": 23.48,
+    "آزادگان (بزرگراه)": 21.73,
+    "شریعتی (خیابان)": 30.21,
+    "آزادی (خیابان)": 22.45,
+    "کاشانی (بزرگراه)": 28.51,
+    "جلال آل‌احمد (بزرگراه)": 24.25,
+    "اشرفی اصفهانی (بزرگراه)": 24.99
+   },
+   "corridor_topo_min": -0.34,
+   "corridor_topo_max": 8.14,
+   "corridor_topo_median": 2.18
+  },
+  "winter": {
+   "flat": 21.35,
+   "roundtrip_lower": 21.99,
+   "roundtrip_central": 22.65,
+   "roundtrip_upper": 23.47,
+   "uphill_central": 40.17,
+   "downhill_central": 4.97,
+   "topo_lower": 0.64,
+   "topo_central": 1.3,
+   "topo_upper": 2.12,
+   "corridors": {
+    "ولی‌عصر (خیابان)": 23.4,
+    "چمران (بزرگراه)": 21.93,
+    "مدرس (بزرگراه)": 26.25,
+    "همت (بزرگراه)": 21.47,
+    "رسالت–شهید سلیمانی (بزرگراه)": 25.24,
+    "صدر–بابایی (بزرگراه)": 23.7,
+    "امام علی (بزرگراه)": 22.76,
+    "آزادگان (بزرگراه)": 21.01,
+    "شریعتی (خیابان)": 29.48,
+    "آزادی (خیابان)": 21.72,
+    "کاشانی (بزرگراه)": 27.79,
+    "جلال آل‌احمد (بزرگراه)": 23.52,
+    "اشرفی اصفهانی (بزرگراه)": 24.27
+   },
+   "corridor_topo_min": -0.34,
+   "corridor_topo_max": 8.13,
+   "corridor_topo_median": 2.17
+  },
+  "shoulder": {
+   "flat": 17.36,
+   "roundtrip_lower": 18.01,
+   "roundtrip_central": 18.66,
+   "roundtrip_upper": 19.48,
+   "uphill_central": 36.18,
+   "downhill_central": 0.98,
+   "topo_lower": 0.65,
+   "topo_central": 1.3,
+   "topo_upper": 2.12,
+   "corridors": {
+    "ولی‌عصر (خیابان)": 19.41,
+    "چمران (بزرگراه)": 17.94,
+    "مدرس (بزرگراه)": 22.26,
+    "همت (بزرگراه)": 17.49,
+    "رسالت–شهید سلیمانی (بزرگراه)": 21.25,
+    "صدر–بابایی (بزرگراه)": 19.71,
+    "امام علی (بزرگراه)": 18.77,
+    "آزادگان (بزرگراه)": 17.02,
+    "شریعتی (خیابان)": 25.5,
+    "آزادی (خیابان)": 17.74,
+    "کاشانی (بزرگراه)": 23.8,
+    "جلال آل‌احمد (بزرگراه)": 19.53,
+    "اشرفی اصفهانی (بزرگراه)": 20.28
+   },
+   "corridor_topo_min": -0.34,
+   "corridor_topo_max": 8.14,
+   "corridor_topo_median": 2.17
+  }
+ },
+ "corridors": {
+  "ولی‌عصر (خیابان)": {
+   "file": "ولی_عصر_خیابان_profile.csv",
+   "length_km": 17.6,
+   "mean_abs_grade_pct": 3.15,
+   "net_rise_m": 518.6
+  },
+  "چمران (بزرگراه)": {
+   "file": "چمران_بزرگراه_profile.csv",
+   "length_km": 11.84,
+   "mean_abs_grade_pct": 3.75,
+   "net_rise_m": 391.0
+  },
+  "مدرس (بزرگراه)": {
+   "file": "مدرس_بزرگراه_profile.csv",
+   "length_km": 8.67,
+   "mean_abs_grade_pct": 4.38,
+   "net_rise_m": 333.2
+  },
+  "همت (بزرگراه)": {
+   "file": "همت_بزرگراه_profile.csv",
+   "length_km": 10.87,
+   "mean_abs_grade_pct": 1.97,
+   "net_rise_m": 111.0
+  },
+  "رسالت–شهید سلیمانی (بزرگراه)": {
+   "file": "رسالت_شهید_سلیمانی_بزرگراه_profile.csv",
+   "length_km": 20.29,
+   "mean_abs_grade_pct": 1.39,
+   "net_rise_m": 327.7
+  },
+  "صدر–بابایی (بزرگراه)": {
+   "file": "صدر_بابایی_بزرگراه_profile.csv",
+   "length_km": 22.25,
+   "mean_abs_grade_pct": 2.64,
+   "net_rise_m": 166.7
+  },
+  "امام علی (بزرگراه)": {
+   "file": "امام_علی_بزرگراه_profile.csv",
+   "length_km": 26.2,
+   "mean_abs_grade_pct": 3.01,
+   "net_rise_m": 558.4
+  },
+  "آزادگان (بزرگراه)": {
+   "file": "آزادگان_بزرگراه_profile.csv",
+   "length_km": 21.21,
+   "mean_abs_grade_pct": 1.22,
+   "net_rise_m": 99.5
+  },
+  "شریعتی (خیابان)": {
+   "file": "شریعتی_خیابان_profile.csv",
+   "length_km": 5.96,
+   "mean_abs_grade_pct": 5.16,
+   "net_rise_m": 240.7
+  },
+  "آزادی (خیابان)": {
+   "file": "آزادی_خیابان_profile.csv",
+   "length_km": 4.71,
+   "mean_abs_grade_pct": 3.41,
+   "net_rise_m": 20.5
+  },
+  "کاشانی (بزرگراه)": {
+   "file": "کاشانی_بزرگراه_profile.csv",
+   "length_km": 16.39,
+   "mean_abs_grade_pct": 1.85,
+   "net_rise_m": 202.2
+  },
+  "جلال آل‌احمد (بزرگراه)": {
+   "file": "جلال_آل_احمد_بزرگراه_profile.csv",
+   "length_km": 4.29,
+   "mean_abs_grade_pct": 2.62,
+   "net_rise_m": 31.6
+  },
+  "اشرفی اصفهانی (بزرگراه)": {
+   "file": "اشرفی_اصفهانی_بزرگراه_profile.csv",
+   "length_km": 6.3,
+   "mean_abs_grade_pct": 4.59,
+   "net_rise_m": 300.9
+  }
+ },
+ "n_corridors": 13
+}

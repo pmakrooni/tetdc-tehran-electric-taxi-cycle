@@ -1,0 +1,478 @@
+{
+ "purpose": "TETDC stage 9a — route-level statistics (§19)",
+ "method": "15 real corridors x 2 directions; SAME TETDC-1 kinematics; real DEM grades resampled to cycle distance; groups split at 2.5% mean |grade| (sample median); ANOVA on round-trip values",
+ "n_routes_total": 30,
+ "n_corridors": 15,
+ "groups": {
+  "LOW_grade": {
+   "n_corridors": 7,
+   "mean": 23.74,
+   "std": 2.56,
+   "ci95": [
+    21.99,
+    25.73
+   ],
+   "definition": "mean |grade| < 2.5%"
+  },
+  "HIGH_grade": {
+   "n_corridors": 8,
+   "mean": 24.87,
+   "std": 2.09,
+   "ci95": [
+    23.63,
+    26.49
+   ],
+   "definition": "mean |grade| >= 2.5%"
+  }
+ },
+ "anova_flat_vs_hilly": {
+  "F": 0.77,
+  "p_value": 0.3974784946572488,
+  "welch_t": -0.86,
+  "welch_p": 0.40634091233684383,
+  "significant_at_0.05": false
+ },
+ "topo_uplift_pct": {
+  "HIGH_mean": 12.7,
+  "LOW_mean": 7.6,
+  "welch_t": 0.2,
+  "p_value": 0.8431636814317258,
+  "abs_deviation_test": {
+   "HIGH_mean_abs_dev_pct": 88.1,
+   "LOW_mean_abs_dev_pct": 21.8,
+   "welch_t": 6.1,
+   "p_value": 9.870646937619007e-06,
+   "significant_at_0.05": true,
+   "note": "round-trip means differ modestly (regen compensates), but the DIRECTIONAL swing vs flat baseline is an order of magnitude larger on hilly corridors"
+  }
+ },
+ "one_way_extremes": {
+  "max_kWh_100km": 61.06,
+  "corridor_of_max": "شریعتی_خیابان",
+  "min_kWh_100km": -3.76
+ },
+ "routes": [
+  {
+   "corridor": "آزادگان_بزرگراه",
+   "direction": "forward",
+   "length_km": 21.21,
+   "mean_abs_grade_pct": 0.95,
+   "net_grade_pct": 0.42,
+   "kWh_100km": 26.06,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 18.1,
+   "group": "LOW"
+  },
+  {
+   "corridor": "آزادگان_بزرگراه",
+   "direction": "reverse",
+   "length_km": 21.21,
+   "mean_abs_grade_pct": 0.95,
+   "net_grade_pct": 0.42,
+   "kWh_100km": 16.88,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -23.5,
+   "group": "LOW"
+  },
+  {
+   "corridor": "آزادی_خیابان",
+   "direction": "forward",
+   "length_km": 4.71,
+   "mean_abs_grade_pct": 2.06,
+   "net_grade_pct": 0.05,
+   "kWh_100km": 29.38,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 33.1,
+   "group": "LOW"
+  },
+  {
+   "corridor": "آزادی_خیابان",
+   "direction": "reverse",
+   "length_km": 4.71,
+   "mean_abs_grade_pct": 2.06,
+   "net_grade_pct": 0.05,
+   "kWh_100km": 15.86,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -28.2,
+   "group": "LOW"
+  },
+  {
+   "corridor": "اشرفی_اصفهانی_بزرگراه",
+   "direction": "forward",
+   "length_km": 6.3,
+   "mean_abs_grade_pct": 4.67,
+   "net_grade_pct": -4.76,
+   "kWh_100km": -3.76,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -117.0,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "اشرفی_اصفهانی_بزرگراه",
+   "direction": "reverse",
+   "length_km": 6.3,
+   "mean_abs_grade_pct": 4.67,
+   "net_grade_pct": -4.76,
+   "kWh_100km": 54.4,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 146.5,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "امام_علی_بزرگراه",
+   "direction": "forward",
+   "length_km": 26.2,
+   "mean_abs_grade_pct": 2.77,
+   "net_grade_pct": 2.13,
+   "kWh_100km": 40.51,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 83.5,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "امام_علی_بزرگراه",
+   "direction": "reverse",
+   "length_km": 26.2,
+   "mean_abs_grade_pct": 2.77,
+   "net_grade_pct": 2.13,
+   "kWh_100km": 5.65,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -74.4,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "انقلاب_خیابان",
+   "direction": "forward",
+   "length_km": 2.5,
+   "mean_abs_grade_pct": 1.76,
+   "net_grade_pct": -0.61,
+   "kWh_100km": 24.4,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 10.5,
+   "group": "LOW"
+  },
+  {
+   "corridor": "انقلاب_خیابان",
+   "direction": "reverse",
+   "length_km": 2.5,
+   "mean_abs_grade_pct": 1.76,
+   "net_grade_pct": -0.61,
+   "kWh_100km": 17.16,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -22.3,
+   "group": "LOW"
+  },
+  {
+   "corridor": "جلال_آل_احمد_بزرگراه",
+   "direction": "forward",
+   "length_km": 4.29,
+   "mean_abs_grade_pct": 2.53,
+   "net_grade_pct": 0.41,
+   "kWh_100km": 29.72,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 34.7,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "جلال_آل_احمد_بزرگراه",
+   "direction": "reverse",
+   "length_km": 4.29,
+   "mean_abs_grade_pct": 2.53,
+   "net_grade_pct": 0.41,
+   "kWh_100km": 18.17,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -17.7,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "رسالت_شهید_سلیمانی_بزرگراه",
+   "direction": "forward",
+   "length_km": 20.29,
+   "mean_abs_grade_pct": 1.42,
+   "net_grade_pct": 1.12,
+   "kWh_100km": 26.18,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 18.6,
+   "group": "LOW"
+  },
+  {
+   "corridor": "رسالت_شهید_سلیمانی_بزرگراه",
+   "direction": "reverse",
+   "length_km": 20.29,
+   "mean_abs_grade_pct": 1.42,
+   "net_grade_pct": 1.12,
+   "kWh_100km": 25.06,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 13.5,
+   "group": "LOW"
+  },
+  {
+   "corridor": "شریعتی_خیابان",
+   "direction": "forward",
+   "length_km": 5.96,
+   "mean_abs_grade_pct": 4.43,
+   "net_grade_pct": -4.04,
+   "kWh_100km": -1.65,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -107.5,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "شریعتی_خیابان",
+   "direction": "reverse",
+   "length_km": 5.96,
+   "mean_abs_grade_pct": 4.43,
+   "net_grade_pct": -4.04,
+   "kWh_100km": 61.06,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 176.7,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "صدر_بابایی_بزرگراه",
+   "direction": "forward",
+   "length_km": 22.25,
+   "mean_abs_grade_pct": 2.13,
+   "net_grade_pct": -0.72,
+   "kWh_100km": 19.64,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -11.0,
+   "group": "LOW"
+  },
+  {
+   "corridor": "صدر_بابایی_بزرگراه",
+   "direction": "reverse",
+   "length_km": 22.25,
+   "mean_abs_grade_pct": 2.13,
+   "net_grade_pct": -0.72,
+   "kWh_100km": 29.75,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 34.8,
+   "group": "LOW"
+  },
+  {
+   "corridor": "مدرس_بزرگراه",
+   "direction": "forward",
+   "length_km": 8.67,
+   "mean_abs_grade_pct": 4.24,
+   "net_grade_pct": 3.73,
+   "kWh_100km": 50.27,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 127.8,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "مدرس_بزرگراه",
+   "direction": "reverse",
+   "length_km": 8.67,
+   "mean_abs_grade_pct": 4.24,
+   "net_grade_pct": 3.73,
+   "kWh_100km": 2.13,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -90.3,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "نیایش_بزرگراه",
+   "direction": "forward",
+   "length_km": 2.91,
+   "mean_abs_grade_pct": 3.9,
+   "net_grade_pct": -2.11,
+   "kWh_100km": 12.7,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -42.4,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "نیایش_بزرگراه",
+   "direction": "reverse",
+   "length_km": 2.91,
+   "mean_abs_grade_pct": 3.9,
+   "net_grade_pct": -2.11,
+   "kWh_100km": 34.11,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 54.6,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "همت_بزرگراه",
+   "direction": "forward",
+   "length_km": 10.87,
+   "mean_abs_grade_pct": 1.86,
+   "net_grade_pct": -0.64,
+   "kWh_100km": 18.89,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -14.4,
+   "group": "LOW"
+  },
+  {
+   "corridor": "همت_بزرگراه",
+   "direction": "reverse",
+   "length_km": 10.87,
+   "mean_abs_grade_pct": 1.86,
+   "net_grade_pct": -0.64,
+   "kWh_100km": 25.79,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 16.8,
+   "group": "LOW"
+  },
+  {
+   "corridor": "ولی_عصر_خیابان",
+   "direction": "forward",
+   "length_km": 17.6,
+   "mean_abs_grade_pct": 3.09,
+   "net_grade_pct": 2.88,
+   "kWh_100km": 44.94,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 103.6,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "ولی_عصر_خیابان",
+   "direction": "reverse",
+   "length_km": 17.6,
+   "mean_abs_grade_pct": 3.09,
+   "net_grade_pct": 2.88,
+   "kWh_100km": 3.34,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -84.9,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "چمران_بزرگراه",
+   "direction": "forward",
+   "length_km": 11.84,
+   "mean_abs_grade_pct": 3.78,
+   "net_grade_pct": -2.99,
+   "kWh_100km": 6.88,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": -68.8,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "چمران_بزرگراه",
+   "direction": "reverse",
+   "length_km": 11.84,
+   "mean_abs_grade_pct": 3.78,
+   "net_grade_pct": -2.99,
+   "kWh_100km": 39.5,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 79.0,
+   "group": "HIGH"
+  },
+  {
+   "corridor": "کاشانی_بزرگراه",
+   "direction": "forward",
+   "length_km": 16.39,
+   "mean_abs_grade_pct": 1.79,
+   "net_grade_pct": -0.35,
+   "kWh_100km": 23.97,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 8.6,
+   "group": "LOW"
+  },
+  {
+   "corridor": "کاشانی_بزرگراه",
+   "direction": "reverse",
+   "length_km": 16.39,
+   "mean_abs_grade_pct": 1.79,
+   "net_grade_pct": -0.35,
+   "kWh_100km": 33.39,
+   "kWh_100km_flat_baseline": 22.07,
+   "topo_uplift_pct": 51.3,
+   "group": "LOW"
+  }
+ ],
+ "roundtrips": [
+  {
+   "corridor": "آزادگان_بزرگراه",
+   "kWh_100km": 21.47,
+   "group": "LOW",
+   "mag": 0.95
+  },
+  {
+   "corridor": "آزادی_خیابان",
+   "kWh_100km": 22.619999999999997,
+   "group": "LOW",
+   "mag": 2.06
+  },
+  {
+   "corridor": "اشرفی_اصفهانی_بزرگراه",
+   "kWh_100km": 25.32,
+   "group": "HIGH",
+   "mag": 4.67
+  },
+  {
+   "corridor": "امام_علی_بزرگراه",
+   "kWh_100km": 23.08,
+   "group": "HIGH",
+   "mag": 2.77
+  },
+  {
+   "corridor": "انقلاب_خیابان",
+   "kWh_100km": 20.78,
+   "group": "LOW",
+   "mag": 1.76
+  },
+  {
+   "corridor": "جلال_آل_احمد_بزرگراه",
+   "kWh_100km": 23.945,
+   "group": "HIGH",
+   "mag": 2.53
+  },
+  {
+   "corridor": "رسالت_شهید_سلیمانی_بزرگراه",
+   "kWh_100km": 25.619999999999997,
+   "group": "LOW",
+   "mag": 1.42
+  },
+  {
+   "corridor": "شریعتی_خیابان",
+   "kWh_100km": 29.705000000000002,
+   "group": "HIGH",
+   "mag": 4.43
+  },
+  {
+   "corridor": "صدر_بابایی_بزرگراه",
+   "kWh_100km": 24.695,
+   "group": "LOW",
+   "mag": 2.13
+  },
+  {
+   "corridor": "مدرس_بزرگراه",
+   "kWh_100km": 26.200000000000003,
+   "group": "HIGH",
+   "mag": 4.24
+  },
+  {
+   "corridor": "نیایش_بزرگراه",
+   "kWh_100km": 23.405,
+   "group": "HIGH",
+   "mag": 3.9
+  },
+  {
+   "corridor": "همت_بزرگراه",
+   "kWh_100km": 22.34,
+   "group": "LOW",
+   "mag": 1.86
+  },
+  {
+   "corridor": "ولی_عصر_خیابان",
+   "kWh_100km": 24.14,
+   "group": "HIGH",
+   "mag": 3.09
+  },
+  {
+   "corridor": "چمران_بزرگراه",
+   "kWh_100km": 23.19,
+   "group": "HIGH",
+   "mag": 3.78
+  },
+  {
+   "corridor": "کاشانی_بزرگراه",
+   "kWh_100km": 28.68,
+   "group": "LOW",
+   "mag": 1.79
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+﻿station_id,name,lat,lon,power_kW,power_detail,operator,source,source_ref,entry_type
+CS001,OSM_node_4580509207,35.7122497,51.3279895,,,Pamchal,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS002,OSM_node_10974103515,35.6913195,51.3225192,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS003,OSM_node_10974114311,35.6913391,51.3223851,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS004,OSM_node_10974114312,35.6900952,51.3219479,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS005,OSM_node_10974114908,35.6914088,51.3220283,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS006,OSM_node_10974114909,35.6913826,51.3221732,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS007,OSM_node_10974114910,35.6905047,51.3216126,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS008,OSM_node_10974114911,35.6903479,51.3217306,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS009,OSM_node_10974114912,35.6902411,51.3218218,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS010,OSM_node_11964098657,35.7008587,51.3366382,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS011,OSM_node_12203579356,35.7003461,51.386887,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS012,OSM_node_13118834077,35.7654276,51.4808491,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS013,ایستگاه شارژ پایانه معین,35.6606339,51.3967393,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS014,ایستگاه شارژ پارک آب و آتش,35.7497968,51.4171521,,"sockets {'type2': '2', 'type2:output': '7.4 kW'}",,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS015,ایستگاه شارژ منطقه ۸ شهرداری,35.7311376,51.5069055,,"sockets {'type2_combo': '1', 'type2_combo:output': '60 kW'}",,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS016,OSM_node_13374567294,35.7008938,51.3384544,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS017,ایستگاه شارژ برقی خودرو,35.746644,51.3744265,,,,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS018,OSM_way_1138746191,35.6838554,51.419683,,,شرکت واحد اتوبوسرانی تهران و حومه;سازمان مدیریت و نظارت بر تاکسیرانی شهرداری تهران,"OSM/Overpass (maps.mail.ru mirror, base 2026-09-11)",this project stage 5 live query,osm
+CS019,ایستگاه بوستان ولایت,,,340.0,DC 340 kW — قوی‌ترین ایستگاه تهران,کارامید,project feasibility report (cited public lists),Karamid public list [103],documented
+CS020,ایستگاه میدان آزادی,,,120.0,DC 120 kW، شبانه‌روزی,,project feasibility report (cited public lists),Tapsi blog list [102],documented
+CS021,ایستگاه ۵ مگاواتی مپنا,,,5000.0,بزرگ‌ترین ایستگاه کشور (ظرفیت 5 MW مجموع),مپنا,project feasibility report (cited public lists),news [97],documented
+CS022,جایگاه شارژ برج میلاد,,,,نخستین جایگاه شارژ عمومی کشور (خرداد ۱۳۹۸),گروه مپنا,project feasibility report (cited public lists),[96],documented
+CS023,ایستگاه شهرداری (نقطه نمونه),35.708,51.42,,مختصات منتشرشده در فهرست نمایندگی,شهرداری تهران,project feasibility report (cited public lists),[104],documented
+CS024,پارکینگ طالقانی,,,,در فهرست‌های عمومی,,project feasibility report (cited public lists),[104],documented
+CS025,پارکینگ سعدی,,,,در فهرست‌های عمومی,,project feasibility report (cited public lists),[104],documented
+CS026,ایستگاه سبز دانشگاه شریف,,,,ترکیب خورشیدی + ذخیره‌ساز؛ ویژه اتوبوس/تاکسی برقی,دانشگاه صنعتی شریف,project feasibility report (cited public lists),[98],documented

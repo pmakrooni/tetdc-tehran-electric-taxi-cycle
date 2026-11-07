@@ -1,0 +1,376 @@
+{
+ "bank": {
+  "n_traces": 9000,
+  "n_microtrips": 37542,
+  "n_implausible_amax_gt4": 1045,
+  "share_implausible_pct": 2.78,
+  "p99_acc_microtrips_all": 1.441,
+  "p99_acc_microtrips_without_implausible": 1.406,
+  "tetdc_max_acc": 1.414
+ },
+ "energy": {
+  "n_traces_ge300s": 8174,
+  "tetdc": {
+   "summer": 22.07,
+   "winter": 21.35,
+   "shoulder": 17.36
+  },
+  "wltc": {
+   "summer": 22.23,
+   "winter": 21.8,
+   "shoulder": 19.44
+  },
+  "summer": {
+   "trace_median": 23.1,
+   "trace_p10": 19.77,
+   "trace_p90": 28.28,
+   "distance_weighted_mean": 23.31,
+   "tetdc_percentile_among_traces": 35.9,
+   "tetdc_vs_weighted_mean_pct": -5.3
+  },
+  "winter": {
+   "trace_median": 22.25,
+   "trace_p10": 19.12,
+   "trace_p90": 26.98,
+   "distance_weighted_mean": 22.5,
+   "tetdc_percentile_among_traces": 37.0,
+   "tetdc_vs_weighted_mean_pct": -5.1
+  },
+  "shoulder": {
+   "trace_median": 17.31,
+   "trace_p10": 14.78,
+   "trace_p90": 21.14,
+   "distance_weighted_mean": 18.06,
+   "tetdc_percentile_among_traces": 50.9,
+   "tetdc_vs_weighted_mean_pct": -3.9
+  }
+ },
+ "seeds": {
+  "runs": [
+   {
+    "seed": 42,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 4.97,
+    "duration_s": 1920,
+    "v_mean_kmh": 27.58,
+    "kwh_summer": 22.07,
+    "kwh_winter": 21.35,
+    "kwh_shoulder": 17.36,
+    "shape_summer": -0.16,
+    "shape_winter": -0.45,
+    "shape_shoulder": -2.08,
+    "dR_central_pct_summer": 5.15,
+    "dR_central_pct_winter": 3.89,
+    "dR_central_pct_shoulder": -3.98
+   },
+   {
+    "seed": 1,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 10.13,
+    "duration_s": 1959,
+    "v_mean_kmh": 26.62,
+    "kwh_summer": 23.09,
+    "kwh_winter": 22.34,
+    "kwh_shoulder": 18.21,
+    "shape_summer": 0.86,
+    "shape_winter": 0.53,
+    "shape_shoulder": -1.23,
+    "dR_central_pct_summer": 11.74,
+    "dR_central_pct_winter": 10.5,
+    "dR_central_pct_shoulder": 2.69
+   },
+   {
+    "seed": 2,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 8.99,
+    "duration_s": 1866,
+    "v_mean_kmh": 26.83,
+    "kwh_summer": 21.35,
+    "kwh_winter": 20.61,
+    "kwh_shoulder": 16.51,
+    "shape_summer": -0.88,
+    "shape_winter": -1.19,
+    "shape_shoulder": -2.93,
+    "dR_central_pct_summer": 1.27,
+    "dR_central_pct_winter": -0.15,
+    "dR_central_pct_shoulder": -9.09
+   },
+   {
+    "seed": 3,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 5.8,
+    "duration_s": 1888,
+    "v_mean_kmh": 26.24,
+    "kwh_summer": 22.17,
+    "kwh_winter": 21.41,
+    "kwh_shoulder": 17.22,
+    "shape_summer": -0.06,
+    "shape_winter": -0.39,
+    "shape_shoulder": -2.22,
+    "dR_central_pct_summer": 6.21,
+    "dR_central_pct_winter": 4.81,
+    "dR_central_pct_shoulder": -4.0
+   },
+   {
+    "seed": 4,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 6.7,
+    "duration_s": 1762,
+    "v_mean_kmh": 26.32,
+    "kwh_summer": 20.83,
+    "kwh_winter": 20.07,
+    "kwh_shoulder": 15.89,
+    "shape_summer": -1.4,
+    "shape_winter": -1.73,
+    "shape_shoulder": -3.54,
+    "dR_central_pct_summer": -0.06,
+    "dR_central_pct_winter": -1.57,
+    "dR_central_pct_shoulder": -11.09
+   },
+   {
+    "seed": 5,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 14.34,
+    "duration_s": 1802,
+    "v_mean_kmh": 25.75,
+    "kwh_summer": 21.31,
+    "kwh_winter": 20.53,
+    "kwh_shoulder": 16.26,
+    "shape_summer": -0.92,
+    "shape_winter": -1.27,
+    "shape_shoulder": -3.18,
+    "dR_central_pct_summer": 2.83,
+    "dR_central_pct_winter": 1.3,
+    "dR_central_pct_shoulder": -8.35
+   },
+   {
+    "seed": 6,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 16.22,
+    "duration_s": 1709,
+    "v_mean_kmh": 17.76,
+    "kwh_summer": 24.72,
+    "kwh_winter": 23.59,
+    "kwh_shoulder": 17.4,
+    "shape_summer": 2.48,
+    "shape_winter": 1.79,
+    "shape_shoulder": -2.04,
+    "dR_central_pct_summer": 16.2,
+    "dR_central_pct_winter": 13.33,
+    "dR_central_pct_shoulder": -4.73
+   },
+   {
+    "seed": 7,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 6.89,
+    "duration_s": 1876,
+    "v_mean_kmh": 26.36,
+    "kwh_summer": 22.57,
+    "kwh_winter": 21.82,
+    "kwh_shoulder": 17.65,
+    "shape_summer": 0.34,
+    "shape_winter": 0.01,
+    "shape_shoulder": -1.79,
+    "dR_central_pct_summer": 9.08,
+    "dR_central_pct_winter": 7.76,
+    "dR_central_pct_shoulder": -0.6
+   },
+   {
+    "seed": 8,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 6.73,
+    "duration_s": 1902,
+    "v_mean_kmh": 26.39,
+    "kwh_summer": 21.59,
+    "kwh_winter": 20.83,
+    "kwh_shoulder": 16.67,
+    "shape_summer": -0.64,
+    "shape_winter": -0.97,
+    "shape_shoulder": -2.77,
+    "dR_central_pct_summer": 4.2,
+    "dR_central_pct_winter": 2.78,
+    "dR_central_pct_shoulder": -6.15
+   },
+   {
+    "seed": 9,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 6.76,
+    "duration_s": 1882,
+    "v_mean_kmh": 26.4,
+    "kwh_summer": 20.78,
+    "kwh_winter": 20.02,
+    "kwh_shoulder": 15.86,
+    "shape_summer": -1.45,
+    "shape_winter": -1.78,
+    "shape_shoulder": -3.58,
+    "dR_central_pct_summer": -3.34,
+    "dR_central_pct_winter": -4.91,
+    "dR_central_pct_shoulder": -14.77
+   },
+   {
+    "seed": 10,
+    "method": "microtrip_recomb",
+    "composite_err_pct": 6.06,
+    "duration_s": 1753,
+    "v_mean_kmh": 26.44,
+    "kwh_summer": 22.03,
+    "kwh_winter": 21.27,
+    "kwh_shoulder": 17.12,
+    "shape_summer": -0.2,
+    "shape_winter": -0.53,
+    "shape_shoulder": -2.32,
+    "dR_central_pct_summer": 5.52,
+    "dR_central_pct_winter": 4.13,
+    "dR_central_pct_shoulder": -4.6
+   }
+  ],
+  "summary": {
+   "composite_err_pct": {
+    "mean": 8.51,
+    "min": 4.97,
+    "max": 16.22,
+    "sd": 3.66
+   },
+   "duration_s": {
+    "mean": 1847.18,
+    "min": 1709.0,
+    "max": 1959.0,
+    "sd": 78.83
+   },
+   "v_mean_kmh": {
+    "mean": 25.7,
+    "min": 17.76,
+    "max": 27.58,
+    "sd": 2.67
+   },
+   "kwh_summer": {
+    "mean": 22.05,
+    "min": 20.78,
+    "max": 24.72,
+    "sd": 1.13
+   },
+   "kwh_winter": {
+    "mean": 21.26,
+    "min": 20.02,
+    "max": 23.59,
+    "sd": 1.05
+   },
+   "kwh_shoulder": {
+    "mean": 16.92,
+    "min": 15.86,
+    "max": 18.21,
+    "sd": 0.75
+   },
+   "shape_summer": {
+    "mean": -0.18,
+    "min": -1.45,
+    "max": 2.48,
+    "sd": 1.13
+   },
+   "shape_winter": {
+    "mean": -0.54,
+    "min": -1.78,
+    "max": 1.79,
+    "sd": 1.05
+   },
+   "shape_shoulder": {
+    "mean": -2.52,
+    "min": -3.58,
+    "max": -1.23,
+    "sd": 0.75
+   },
+   "dR_central_pct_summer": {
+    "mean": 5.35,
+    "min": -3.34,
+    "max": 16.2,
+    "sd": 5.5
+   },
+   "dR_central_pct_winter": {
+    "mean": 3.81,
+    "min": -4.91,
+    "max": 13.33,
+    "sd": 5.29
+   },
+   "dR_central_pct_shoulder": {
+    "mean": -5.88,
+    "min": -14.77,
+    "max": 2.69,
+    "sd": 4.84
+   }
+  },
+  "summary_other_seeds": {
+   "composite_err_pct": {
+    "mean": 8.86,
+    "min": 5.8,
+    "max": 16.22,
+    "sd": 3.66
+   },
+   "duration_s": {
+    "mean": 1839.9,
+    "min": 1709.0,
+    "max": 1959.0,
+    "sd": 79.09
+   },
+   "v_mean_kmh": {
+    "mean": 25.51,
+    "min": 17.76,
+    "max": 26.83,
+    "sd": 2.74
+   },
+   "kwh_summer": {
+    "mean": 22.04,
+    "min": 20.78,
+    "max": 24.72,
+    "sd": 1.19
+   },
+   "kwh_winter": {
+    "mean": 21.25,
+    "min": 20.02,
+    "max": 23.59,
+    "sd": 1.11
+   },
+   "kwh_shoulder": {
+    "mean": 16.88,
+    "min": 15.86,
+    "max": 18.21,
+    "sd": 0.77
+   },
+   "shape_summer": {
+    "mean": -0.19,
+    "min": -1.45,
+    "max": 2.48,
+    "sd": 1.19
+   },
+   "shape_winter": {
+    "mean": -0.55,
+    "min": -1.78,
+    "max": 1.79,
+    "sd": 1.11
+   },
+   "shape_shoulder": {
+    "mean": -2.56,
+    "min": -3.58,
+    "max": -1.23,
+    "sd": 0.77
+   },
+   "dR_central_pct_summer": {
+    "mean": 5.36,
+    "min": -3.34,
+    "max": 16.2,
+    "sd": 5.8
+   },
+   "dR_central_pct_winter": {
+    "mean": 3.8,
+    "min": -4.91,
+    "max": 13.33,
+    "sd": 5.58
+   },
+   "dR_central_pct_shoulder": {
+    "mean": -6.07,
+    "min": -14.77,
+    "max": 2.69,
+    "sd": 5.06
+   }
+  }
+ }
+}

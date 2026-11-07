@@ -1,0 +1,165 @@
+{
+ "purpose": "TETDC stage 9b — sensitivity analysis (§20)",
+ "seed": 42,
+ "road_grade": [
+  {
+   "mean_abs_grade_pct": 0.0,
+   "kWh_100km": 22.07,
+   "range_km": 387.8
+  },
+  {
+   "mean_abs_grade_pct": 1.64,
+   "kWh_100km": 22.56,
+   "range_km": 379.4
+  },
+  {
+   "mean_abs_grade_pct": 3.28,
+   "kWh_100km": 24.19,
+   "range_km": 353.8
+  },
+  {
+   "mean_abs_grade_pct": 4.92,
+   "kWh_100km": 26.51,
+   "range_km": 322.9
+  },
+  {
+   "mean_abs_grade_pct": 6.56,
+   "kWh_100km": 29.17,
+   "range_km": 293.4
+  },
+  {
+   "mean_abs_grade_pct": 8.2,
+   "kWh_100km": 31.98,
+   "range_km": 267.6
+  }
+ ],
+ "road_grade_base": 24.19,
+ "congestion": {
+  "peak_7_10": {
+   "n_microtrips": 5922,
+   "v_mean_kmh": 27.46,
+   "idle_pct": 20.87,
+   "kWh_100km_flat_mean": 22.84,
+   "kWh_100km_flat_std": 3.34,
+   "kWh_100km_tehran_mean": 24.68,
+   "kWh_100km_tehran_std": 3.1
+  },
+  "offpeak_11_16": {
+   "n_microtrips": 11053,
+   "v_mean_kmh": 25.34,
+   "idle_pct": 20.52,
+   "kWh_100km_flat_mean": 22.55,
+   "kWh_100km_flat_std": 1.52,
+   "kWh_100km_tehran_mean": 24.41,
+   "kWh_100km_tehran_std": 1.44
+  },
+  "night_0_5": {
+   "n_microtrips": 3397,
+   "v_mean_kmh": 36.61,
+   "idle_pct": 11.69,
+   "kWh_100km_flat_mean": 22.4,
+   "kWh_100km_flat_std": 1.65,
+   "kWh_100km_tehran_mean": 24.07,
+   "kWh_100km_tehran_std": 1.53
+  }
+ },
+ "auxiliary_load": [
+  {
+   "P_aux_W": 0,
+   "kWh_100km": 17.67,
+   "range_km": 484.5
+  },
+  {
+   "P_aux_W": 500,
+   "kWh_100km": 19.48,
+   "range_km": 439.4
+  },
+  {
+   "P_aux_W": 1000,
+   "kWh_100km": 21.29,
+   "range_km": 402.0
+  },
+  {
+   "P_aux_W": 1800,
+   "kWh_100km": 24.19,
+   "range_km": 353.8
+  },
+  {
+   "P_aux_W": 2500,
+   "kWh_100km": 26.73,
+   "range_km": 320.2
+  },
+  {
+   "P_aux_W": 3500,
+   "kWh_100km": 30.35,
+   "range_km": 282.0
+  }
+ ],
+ "aux_base": {
+  "P_aux_W": 1800,
+  "kWh_100km": 24.19,
+  "range_km": 353.8
+ },
+ "tornado": [
+  {
+   "factor": "rolling resistance C_r",
+   "values": [
+    0.006,
+    0.009,
+    0.012
+   ],
+   "kWh_100km": [
+    22.31,
+    24.19,
+    26.1
+   ],
+   "spread": 3.79,
+   "spread_pct_of_base": 15.7
+  },
+  {
+   "factor": "total mass (kg)",
+   "values": [
+    2100,
+    2175,
+    2280
+   ],
+   "kWh_100km": [
+    23.72,
+    24.19,
+    24.85
+   ],
+   "spread": 1.13,
+   "spread_pct_of_base": 4.7
+  },
+  {
+   "factor": "drag coefficient C_d",
+   "values": [
+    0.27,
+    0.29,
+    0.32
+   ],
+   "kWh_100km": [
+    23.91,
+    24.19,
+    24.61
+   ],
+   "spread": 0.7,
+   "spread_pct_of_base": 2.9
+  },
+  {
+   "factor": "road grade 0-8.2% (§20.1)",
+   "spread": 9.91,
+   "spread_pct_of_base": 41.0
+  },
+  {
+   "factor": "A/C 0-3.5 kW (§20.3)",
+   "spread": 12.68,
+   "spread_pct_of_base": 52.4
+  },
+  {
+   "factor": "congestion peak-vs-night (§20.2)",
+   "spread": 0.61,
+   "spread_pct_of_base": 2.5
+  }
+ ]
+}

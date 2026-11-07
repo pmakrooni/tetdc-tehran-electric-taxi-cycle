@@ -1,0 +1,36 @@
+{
+ "n_trips": 54,
+ "summer": {
+  "coef_a_rms_kwh_per_100km_per_ms2": 17.13,
+  "coef_per_0p1_ms2": 1.71,
+  "coef_boot95": [
+   12.69,
+   20.96
+  ],
+  "coef_v_mean_kwh_per_100km_per_kmh": -0.232,
+  "spearman_rho_a_rms": 0.467,
+  "spearman_p": 0.00038
+ },
+ "winter": {
+  "coef_a_rms_kwh_per_100km_per_ms2": 17.11,
+  "coef_per_0p1_ms2": 1.71,
+  "coef_boot95": [
+   12.75,
+   20.84
+  ],
+  "coef_v_mean_kwh_per_100km_per_kmh": -0.207,
+  "spearman_rho_a_rms": 0.498,
+  "spearman_p": 0.00013
+ },
+ "shoulder": {
+  "coef_a_rms_kwh_per_100km_per_ms2": 16.97,
+  "coef_per_0p1_ms2": 1.7,
+  "coef_boot95": [
+   13.25,
+   20.5
+  ],
+  "coef_v_mean_kwh_per_100km_per_kmh": -0.071,
+  "spearman_rho_a_rms": 0.717,
+  "spearman_p": 1e-09
+ }
+}

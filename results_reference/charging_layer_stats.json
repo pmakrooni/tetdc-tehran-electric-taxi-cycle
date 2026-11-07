@@ -1,0 +1,28 @@
+{
+ "layer_purpose": "TETDC digital-twin charging layer (roadmap stage 5)",
+ "osm_elements": 18,
+ "documented_named": 8,
+ "total_entries": 26,
+ "spatial_entries_with_coords": 19,
+ "osm_coverage_note": "OSM Tehran charging coverage is sparse (18 elements) vs officially announced ~126 active stations (Aban 1403 [83]); public lists (Tapsi/Karamid/eMapna) fill names/powers but rarely publish coordinates — a documented data gap.",
+ "documented_power_range_kW": [
+  60,
+  340
+ ],
+ "documented_station_counts": {
+  "active_aban1403": 126,
+  "program_13_to_75_end1404": [
+   13,
+   75
+  ],
+  "new_stations_announced": 62,
+  "national_program": 3500
+ },
+ "fleet_to_station_ratio": {
+  "ev_delivered": 2752,
+  "vs_126_active": 21.8,
+  "shenzhen_2018_terminals_for_taxis": 11571,
+  "note": "Tehran EV/station ratio is ~22x the transition-stage ratio Shenzhen had"
+ },
+ "charge_model_link": "EV model stage-4 T5: 20-80% in 35 min at 90 kW plateau; pack current cap ~450 A limits effective power to ~157 kW"
+}

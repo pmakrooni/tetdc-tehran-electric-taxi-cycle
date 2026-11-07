@@ -1,0 +1,229 @@
+{
+ "authenticity_anchors": {
+  "wltc_len_s": 1801,
+  "wltc_dist_km": 23.27,
+  "wltc_vmax_kmh": 131.3,
+  "nedc_len_s": 1180,
+  "nedc_dist_km": 11.01
+ },
+ "grade_mean_abs_pct": 3.2800000000000002,
+ "sources": {
+  "WLTC": "wltp PyPI package (UNECE GTR-15 reference impl), class 3b, 1801 s",
+  "NEDC": "wltp PyPI package, 4xECE-15 + EUDC, 1180 s",
+  "TETDC": "this project stage 6b (micro-trip recombination), 1920 s"
+ },
+ "kinematics": {
+  "TETDC": {
+   "duration_s": 1920,
+   "distance_km": 14.71,
+   "v_mean_kmh": 27.58,
+   "v_max_kmh": 110.59,
+   "a_max_ms2": 1.414,
+   "d_max_ms2": -1.636,
+   "a_rms_ms2": 0.384,
+   "P_idle_pct": 20.47
+  },
+  "WLTC": {
+   "duration_s": 1801,
+   "distance_km": 23.27,
+   "v_mean_kmh": 46.51,
+   "v_max_kmh": 131.3,
+   "a_max_ms2": 1.583,
+   "d_max_ms2": -1.486,
+   "a_rms_ms2": 0.516,
+   "P_idle_pct": 13.88
+  },
+  "NEDC": {
+   "duration_s": 1180,
+   "distance_km": 11.01,
+   "v_mean_kmh": 33.6,
+   "v_max_kmh": 120.0,
+   "a_max_ms2": 1.042,
+   "d_max_ms2": -1.389,
+   "a_rms_ms2": 0.424,
+   "P_idle_pct": 24.83
+  }
+ },
+ "seasons": {
+  "summer": {
+   "TETDC_flat": {
+    "kWh_per_100km": 22.07,
+    "Wh_per_km": 220.7,
+    "energy_kWh_cycle": 3.246,
+    "range_km": 387.8,
+    "regen_share_pct": 24.8,
+    "distance_km": 14.71
+   },
+   "TETDC_tehran": {
+    "kWh_per_100km": 24.19,
+    "Wh_per_km": 241.9,
+    "energy_kWh_cycle": 3.558,
+    "range_km": 353.8,
+    "regen_share_pct": 33.5,
+    "distance_km": 14.71
+   },
+   "WLTC_flat": {
+    "kWh_per_100km": 22.23,
+    "Wh_per_km": 222.3,
+    "energy_kWh_cycle": 5.173,
+    "range_km": 385.0,
+    "regen_share_pct": 24.2,
+    "distance_km": 23.27
+   },
+   "WLTC_tehran": {
+    "kWh_per_100km": 23.57,
+    "Wh_per_km": 235.7,
+    "energy_kWh_cycle": 5.483,
+    "range_km": 363.2,
+    "regen_share_pct": 29.6,
+    "distance_km": 23.27
+   },
+   "NEDC_flat": {
+    "kWh_per_100km": 21.15,
+    "Wh_per_km": 211.5,
+    "energy_kWh_cycle": 2.329,
+    "range_km": 404.8,
+    "regen_share_pct": 25.4,
+    "distance_km": 11.01
+   },
+   "NEDC_tehran": {
+    "kWh_per_100km": 22.45,
+    "Wh_per_km": 224.5,
+    "energy_kWh_cycle": 2.473,
+    "range_km": 381.2,
+    "regen_share_pct": 31.1,
+    "distance_km": 11.01
+   },
+   "fleet_manager_error": {
+    "energy_error_pct": -8.1,
+    "range_error_pct": 8.8,
+    "range_overestimate_km": 31.2
+   },
+   "decomposition": {
+    "shape_effect_kWh100km": -0.16,
+    "topo_effect_kWh100km": 2.12,
+    "total_gap_kWh100km": 1.96
+   }
+  },
+  "winter": {
+   "TETDC_flat": {
+    "kWh_per_100km": 21.35,
+    "Wh_per_km": 213.5,
+    "energy_kWh_cycle": 3.139,
+    "range_km": 401.0,
+    "regen_share_pct": 24.8,
+    "distance_km": 14.71
+   },
+   "TETDC_tehran": {
+    "kWh_per_100km": 23.47,
+    "Wh_per_km": 234.7,
+    "energy_kWh_cycle": 3.451,
+    "range_km": 364.8,
+    "regen_share_pct": 33.5,
+    "distance_km": 14.71
+   },
+   "WLTC_flat": {
+    "kWh_per_100km": 21.8,
+    "Wh_per_km": 218.0,
+    "energy_kWh_cycle": 5.073,
+    "range_km": 392.6,
+    "regen_share_pct": 24.2,
+    "distance_km": 23.27
+   },
+   "WLTC_tehran": {
+    "kWh_per_100km": 23.14,
+    "Wh_per_km": 231.4,
+    "energy_kWh_cycle": 5.383,
+    "range_km": 370.0,
+    "regen_share_pct": 29.6,
+    "distance_km": 23.27
+   },
+   "NEDC_flat": {
+    "kWh_per_100km": 20.55,
+    "Wh_per_km": 205.5,
+    "energy_kWh_cycle": 2.263,
+    "range_km": 416.5,
+    "regen_share_pct": 25.4,
+    "distance_km": 11.01
+   },
+   "NEDC_tehran": {
+    "kWh_per_100km": 21.86,
+    "Wh_per_km": 218.6,
+    "energy_kWh_cycle": 2.407,
+    "range_km": 391.6,
+    "regen_share_pct": 31.1,
+    "distance_km": 11.01
+   },
+   "fleet_manager_error": {
+    "energy_error_pct": -7.1,
+    "range_error_pct": 7.6,
+    "range_overestimate_km": 27.8
+   },
+   "decomposition": {
+    "shape_effect_kWh100km": -0.45,
+    "topo_effect_kWh100km": 2.12,
+    "total_gap_kWh100km": 1.67
+   }
+  },
+  "shoulder": {
+   "TETDC_flat": {
+    "kWh_per_100km": 17.36,
+    "Wh_per_km": 173.6,
+    "energy_kWh_cycle": 2.553,
+    "range_km": 493.1,
+    "regen_share_pct": 24.8,
+    "distance_km": 14.71
+   },
+   "TETDC_tehran": {
+    "kWh_per_100km": 19.48,
+    "Wh_per_km": 194.8,
+    "energy_kWh_cycle": 2.865,
+    "range_km": 439.4,
+    "regen_share_pct": 33.5,
+    "distance_km": 14.71
+   },
+   "WLTC_flat": {
+    "kWh_per_100km": 19.44,
+    "Wh_per_km": 194.4,
+    "energy_kWh_cycle": 4.523,
+    "range_km": 440.4,
+    "regen_share_pct": 24.2,
+    "distance_km": 23.27
+   },
+   "WLTC_tehran": {
+    "kWh_per_100km": 20.77,
+    "Wh_per_km": 207.7,
+    "energy_kWh_cycle": 4.833,
+    "range_km": 412.1,
+    "regen_share_pct": 29.6,
+    "distance_km": 23.27
+   },
+   "NEDC_flat": {
+    "kWh_per_100km": 17.28,
+    "Wh_per_km": 172.8,
+    "energy_kWh_cycle": 1.903,
+    "range_km": 495.4,
+    "regen_share_pct": 25.4,
+    "distance_km": 11.01
+   },
+   "NEDC_tehran": {
+    "kWh_per_100km": 18.59,
+    "Wh_per_km": 185.9,
+    "energy_kWh_cycle": 2.047,
+    "range_km": 460.5,
+    "regen_share_pct": 31.1,
+    "distance_km": 11.01
+   },
+   "fleet_manager_error": {
+    "energy_error_pct": -0.2,
+    "range_error_pct": 0.2,
+    "range_overestimate_km": 1.0
+   },
+   "decomposition": {
+    "shape_effect_kWh100km": -2.08,
+    "topo_effect_kWh100km": 2.12,
+    "total_gap_kWh100km": 0.04
+   }
+  }
+ }
+}

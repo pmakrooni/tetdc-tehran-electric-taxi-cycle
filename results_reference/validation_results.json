@@ -1,0 +1,778 @@
+{
+ "seed": 42,
+ "target_definitions": {
+  "duration_weighted_features": [
+   "v_mean",
+   "P_idle",
+   "a_rms",
+   "a_pos_mean",
+   "a_neg_mean"
+  ],
+  "pooled_trace_statistics": "v_std and v_mean_mov over the pooled 1 Hz trace sample",
+  "percentile_extremes": "v_max = p99(v), a_max = p99(a), d_max = p01(a) of pooled 1 Hz traces",
+  "microtrip_extras": "PKE distance-weighted; stops_per_km = n_microtrips / distance; P_accel/P_decel/P_cruise duration-weighted; same >=10 s / >=25 m filtered segmentation as construction"
+ },
+ "sec7_feature_validation": {
+  "n_features": 15,
+  "targets": {
+   "v_mean": 7.3292,
+   "P_idle": 20.4585,
+   "a_rms": 0.4425,
+   "a_pos_mean": 0.4275,
+   "a_neg_mean": -0.449,
+   "v_max": 31.3684,
+   "a_max": 1.4186,
+   "d_max": -1.4948,
+   "v_std": 7.2878,
+   "v_mean_mov": 9.0725,
+   "PKE": 0.1808,
+   "stops_per_km": 0.7775,
+   "P_accel": 28.6002,
+   "P_decel": 27.1829,
+   "P_cruise": 23.1917
+  },
+  "cycle_features": {
+   "v_mean": 7.6598,
+   "v_max": 30.719,
+   "v_std": 8.438,
+   "a_max": 1.414,
+   "d_max": -1.636,
+   "a_pos_mean": 0.3996,
+   "a_neg_mean": -0.4526,
+   "P_idle": 20.4688,
+   "a_rms": 0.3843,
+   "PKE": 0.131,
+   "stops_per_km": 0.544,
+   "P_accel": 27.7083,
+   "P_decel": 24.0104,
+   "P_cruise": 28.4375,
+   "v_mean_mov": 9.5975
+  },
+  "feature_rows": [
+   {
+    "feature": "v_mean",
+    "target": 7.3292,
+    "cycle": 7.6598,
+    "rel_err_pct": 4.51
+   },
+   {
+    "feature": "v_max",
+    "target": 31.3684,
+    "cycle": 30.719,
+    "rel_err_pct": 2.07
+   },
+   {
+    "feature": "v_std",
+    "target": 7.2878,
+    "cycle": 8.438,
+    "rel_err_pct": 15.78
+   },
+   {
+    "feature": "a_max",
+    "target": 1.4186,
+    "cycle": 1.414,
+    "rel_err_pct": 0.32
+   },
+   {
+    "feature": "d_max",
+    "target": 1.4948,
+    "cycle": 1.636,
+    "rel_err_pct": 9.44
+   },
+   {
+    "feature": "a_pos_mean",
+    "target": 0.4275,
+    "cycle": 0.3996,
+    "rel_err_pct": 6.54
+   },
+   {
+    "feature": "a_neg_mean",
+    "target": -0.449,
+    "cycle": -0.4526,
+    "rel_err_pct": 0.8
+   },
+   {
+    "feature": "P_idle",
+    "target": 20.4585,
+    "cycle": 20.4688,
+    "rel_err_pct": 0.05
+   },
+   {
+    "feature": "a_rms",
+    "target": 0.4425,
+    "cycle": 0.3843,
+    "rel_err_pct": 13.15
+   },
+   {
+    "feature": "PKE",
+    "target": 0.1808,
+    "cycle": 0.131,
+    "rel_err_pct": 27.55
+   },
+   {
+    "feature": "stops_per_km",
+    "target": 0.7775,
+    "cycle": 0.544,
+    "rel_err_pct": 30.04
+   },
+   {
+    "feature": "P_accel",
+    "target": 28.6002,
+    "cycle": 27.7083,
+    "rel_err_pct": 3.12
+   },
+   {
+    "feature": "P_decel",
+    "target": 27.1829,
+    "cycle": 24.0104,
+    "rel_err_pct": 11.67
+   },
+   {
+    "feature": "P_cruise",
+    "target": 23.1917,
+    "cycle": 28.4375,
+    "rel_err_pct": 22.62
+   },
+   {
+    "feature": "v_mean_mov",
+    "target": 9.0725,
+    "cycle": 9.5975,
+    "rel_err_pct": 5.79
+   }
+  ],
+  "composite_err_pct": 10.23,
+  "max_err_pct": 30.04,
+  "n_within_10pct": 9,
+  "n_within_15pct": 11
+ },
+ "sec7_distribution_tests": {
+  "speed_pdf_rmse_raw_bank": 0.01597,
+  "speed_pdf_rmse_microtrip_bank": 0.0156,
+  "va_pdf_rmse_raw_bank": 0.0023,
+  "va_pdf_rmse_microtrip_bank": 0.00227,
+  "ks_speed_raw": {
+   "D": 0.1033,
+   "p": 2.894037576491991e-18
+  },
+  "ks_speed_microtrip": {
+   "D": 0.1005,
+   "p": 2.6019355407783872e-17
+  },
+  "ks_accel_microtrip": {
+   "D": 0.037,
+   "p": 0.010065402899266225
+  },
+  "note": "KS p-values are dominated by the 7.0M-sample fleet size; the D statistic (max CDF deviation) is the interpretable effect size. 'raw bank' = pooled 1 Hz traces including creep segments excluded by the micro-trip filter; 'micro-trip bank' = the construction frame."
+ },
+ "sec8_route_split": {
+  "train_trips": 33967,
+  "test_trips": 14448,
+  "train_microtrips": 140670,
+  "test_microtrips": 59695,
+  "tetdc1_vs_test": {
+   "feature_rows": [
+    {
+     "feature": "v_mean",
+     "target": 7.35,
+     "cycle": 7.6598,
+     "rel_err_pct": 4.22
+    },
+    {
+     "feature": "v_max",
+     "target": 32.0351,
+     "cycle": 30.719,
+     "rel_err_pct": 4.11
+    },
+    {
+     "feature": "v_std",
+     "target": 7.3916,
+     "cycle": 8.438,
+     "rel_err_pct": 14.16
+    },
+    {
+     "feature": "a_max",
+     "target": 1.4233,
+     "cycle": 1.414,
+     "rel_err_pct": 0.65
+    },
+    {
+     "feature": "d_max",
+     "target": 1.5046,
+     "cycle": 1.636,
+     "rel_err_pct": 8.73
+    },
+    {
+     "feature": "a_pos_mean",
+     "target": 0.4275,
+     "cycle": 0.3996,
+     "rel_err_pct": 6.54
+    },
+    {
+     "feature": "a_neg_mean",
+     "target": -0.4492,
+     "cycle": -0.4526,
+     "rel_err_pct": 0.75
+    },
+    {
+     "feature": "P_idle",
+     "target": 20.5612,
+     "cycle": 20.4688,
+     "rel_err_pct": 0.45
+    },
+    {
+     "feature": "a_rms",
+     "target": 0.4424,
+     "cycle": 0.3843,
+     "rel_err_pct": 13.13
+    },
+    {
+     "feature": "PKE",
+     "target": 0.1799,
+     "cycle": 0.131,
+     "rel_err_pct": 27.21
+    },
+    {
+     "feature": "stops_per_km",
+     "target": 0.7689,
+     "cycle": 0.544,
+     "rel_err_pct": 29.25
+    },
+    {
+     "feature": "P_accel",
+     "target": 28.8703,
+     "cycle": 27.7083,
+     "rel_err_pct": 4.02
+    },
+    {
+     "feature": "P_decel",
+     "target": 27.4139,
+     "cycle": 24.0104,
+     "rel_err_pct": 12.42
+    },
+    {
+     "feature": "P_cruise",
+     "target": 23.4674,
+     "cycle": 28.4375,
+     "rel_err_pct": 21.18
+    },
+    {
+     "feature": "v_mean_mov",
+     "target": 9.1825,
+     "cycle": 9.5975,
+     "rel_err_pct": 4.52
+    }
+   ],
+   "composite_err_pct": 10.09
+  },
+  "cv_rebuild_vs_test": {
+   "feature_rows": [
+    {
+     "feature": "v_mean",
+     "target": 7.35,
+     "cycle": 7.2964,
+     "rel_err_pct": 0.73
+    },
+    {
+     "feature": "v_max",
+     "target": 32.0351,
+     "cycle": 30.1816,
+     "rel_err_pct": 5.79
+    },
+    {
+     "feature": "v_std",
+     "target": 7.3916,
+     "cycle": 5.6561,
+     "rel_err_pct": 23.48
+    },
+    {
+     "feature": "a_max",
+     "target": 1.4233,
+     "cycle": 1.7264,
+     "rel_err_pct": 21.3
+    },
+    {
+     "feature": "d_max",
+     "target": 1.5046,
+     "cycle": 1.5854,
+     "rel_err_pct": 5.37
+    },
+    {
+     "feature": "a_pos_mean",
+     "target": 0.4275,
+     "cycle": 0.4946,
+     "rel_err_pct": 15.69
+    },
+    {
+     "feature": "a_neg_mean",
+     "target": -0.4492,
+     "cycle": -0.4222,
+     "rel_err_pct": 6.01
+    },
+    {
+     "feature": "P_idle",
+     "target": 20.5612,
+     "cycle": 20.3495,
+     "rel_err_pct": 1.03
+    },
+    {
+     "feature": "a_rms",
+     "target": 0.4424,
+     "cycle": 0.4421,
+     "rel_err_pct": 0.07
+    },
+    {
+     "feature": "PKE",
+     "target": 0.1799,
+     "cycle": 0.1665,
+     "rel_err_pct": 7.48
+    },
+    {
+     "feature": "stops_per_km",
+     "target": 0.7689,
+     "cycle": 0.7726,
+     "rel_err_pct": 0.48
+    },
+    {
+     "feature": "P_accel",
+     "target": 28.8703,
+     "cycle": 28.0722,
+     "rel_err_pct": 2.76
+    },
+    {
+     "feature": "P_decel",
+     "target": 27.4139,
+     "cycle": 32.8636,
+     "rel_err_pct": 19.88
+    },
+    {
+     "feature": "P_cruise",
+     "target": 23.4674,
+     "cycle": 19.9549,
+     "rel_err_pct": 14.97
+    },
+    {
+     "feature": "v_mean_mov",
+     "target": 9.1825,
+     "cycle": 9.1066,
+     "rel_err_pct": 0.83
+    }
+   ],
+   "composite_err_pct": 8.39
+  },
+  "bootstrap_n": 200,
+  "bootstrap_composite_err_pct": {
+   "p5": 9.92,
+   "p50": 10.14,
+   "p95": 10.36
+  },
+  "bootstrap_per_feature": {
+   "v_mean": {
+    "p5": 3.33,
+    "p50": 4.24,
+    "p95": 5.1
+   },
+   "v_max": {
+    "p5": 4.11,
+    "p50": 4.11,
+    "p95": 4.11
+   },
+   "v_std": {
+    "p5": 14.16,
+    "p50": 14.16,
+    "p95": 14.16
+   },
+   "a_max": {
+    "p5": 0.65,
+    "p50": 0.65,
+    "p95": 0.65
+   },
+   "d_max": {
+    "p5": 8.73,
+    "p50": 8.73,
+    "p95": 8.73
+   },
+   "a_pos_mean": {
+    "p5": 6.16,
+    "p50": 6.53,
+    "p95": 6.92
+   },
+   "a_neg_mean": {
+    "p5": 0.37,
+    "p50": 0.77,
+    "p95": 1.18
+   },
+   "P_idle": {
+    "p5": 0.08,
+    "p50": 0.85,
+    "p95": 2.34
+   },
+   "a_rms": {
+    "p5": 12.61,
+    "p50": 13.09,
+    "p95": 13.6
+   },
+   "PKE": {
+    "p5": 26.39,
+    "p50": 27.18,
+    "p95": 27.94
+   },
+   "stops_per_km": {
+    "p5": 27.17,
+    "p50": 29.35,
+    "p95": 31.37
+   },
+   "P_accel": {
+    "p5": 3.08,
+    "p50": 4.11,
+    "p95": 5.06
+   },
+   "P_decel": {
+    "p5": 11.54,
+    "p50": 12.45,
+    "p95": 13.34
+   },
+   "P_cruise": {
+    "p5": 19.49,
+    "p50": 21.14,
+    "p95": 22.68
+   },
+   "v_mean_mov": {
+    "p5": 4.52,
+    "p50": 4.52,
+    "p95": 4.52
+   }
+  }
+ },
+ "sec8_time_split": {
+  "peak_hours_utc": [
+   7,
+   8,
+   9,
+   16,
+   17,
+   18,
+   19
+  ],
+  "peak_microtrips": 84472,
+  "offpeak_microtrips": 115893,
+  "tetdc1_vs_peak": {
+   "composite_err_pct": 12.87,
+   "feature_rows": [
+    {
+     "feature": "v_mean",
+     "target": 6.6485,
+     "cycle": 7.6598,
+     "rel_err_pct": 15.21
+    },
+    {
+     "feature": "v_max",
+     "target": 29.8485,
+     "cycle": 30.719,
+     "rel_err_pct": 2.92
+    },
+    {
+     "feature": "v_std",
+     "target": 6.8943,
+     "cycle": 8.438,
+     "rel_err_pct": 22.39
+    },
+    {
+     "feature": "a_max",
+     "target": 1.345,
+     "cycle": 1.414,
+     "rel_err_pct": 5.13
+    },
+    {
+     "feature": "d_max",
+     "target": 1.4173,
+     "cycle": 1.636,
+     "rel_err_pct": 15.43
+    },
+    {
+     "feature": "a_pos_mean",
+     "target": 0.4139,
+     "cycle": 0.3996,
+     "rel_err_pct": 3.45
+    },
+    {
+     "feature": "a_neg_mean",
+     "target": -0.4353,
+     "cycle": -0.4526,
+     "rel_err_pct": 3.97
+    },
+    {
+     "feature": "P_idle",
+     "target": 21.7814,
+     "cycle": 20.4688,
+     "rel_err_pct": 6.03
+    },
+    {
+     "feature": "a_rms",
+     "target": 0.4201,
+     "cycle": 0.3843,
+     "rel_err_pct": 8.52
+    },
+    {
+     "feature": "PKE",
+     "target": 0.1756,
+     "cycle": 0.131,
+     "rel_err_pct": 25.4
+    },
+    {
+     "feature": "stops_per_km",
+     "target": 0.8983,
+     "cycle": 0.544,
+     "rel_err_pct": 39.45
+    },
+    {
+     "feature": "P_accel",
+     "target": 27.4446,
+     "cycle": 27.7083,
+     "rel_err_pct": 0.96
+    },
+    {
+     "feature": "P_decel",
+     "target": 25.9649,
+     "cycle": 24.0104,
+     "rel_err_pct": 7.53
+    },
+    {
+     "feature": "P_cruise",
+     "target": 23.1747,
+     "cycle": 28.4375,
+     "rel_err_pct": 22.71
+    },
+    {
+     "feature": "v_mean_mov",
+     "target": 8.4216,
+     "cycle": 9.5975,
+     "rel_err_pct": 13.96
+    }
+   ]
+  },
+  "tetdc1_vs_offpeak": {
+   "composite_err_pct": 10.24,
+   "feature_rows": [
+    {
+     "feature": "v_mean",
+     "target": 7.7859,
+     "cycle": 7.6598,
+     "rel_err_pct": 1.62
+    },
+    {
+     "feature": "v_max",
+     "target": 32.185,
+     "cycle": 30.719,
+     "rel_err_pct": 4.55
+    },
+    {
+     "feature": "v_std",
+     "target": 7.51,
+     "cycle": 8.438,
+     "rel_err_pct": 12.36
+    },
+    {
+     "feature": "a_max",
+     "target": 1.466,
+     "cycle": 1.414,
+     "rel_err_pct": 3.55
+    },
+    {
+     "feature": "d_max",
+     "target": 1.5471,
+     "cycle": 1.636,
+     "rel_err_pct": 5.75
+    },
+    {
+     "feature": "a_pos_mean",
+     "target": 0.4367,
+     "cycle": 0.3996,
+     "rel_err_pct": 8.5
+    },
+    {
+     "feature": "a_neg_mean",
+     "target": -0.4582,
+     "cycle": -0.4526,
+     "rel_err_pct": 1.22
+    },
+    {
+     "feature": "P_idle",
+     "target": 19.5708,
+     "cycle": 20.4688,
+     "rel_err_pct": 4.59
+    },
+    {
+     "feature": "a_rms",
+     "target": 0.4575,
+     "cycle": 0.3843,
+     "rel_err_pct": 16.0
+    },
+    {
+     "feature": "PKE",
+     "target": 0.1838,
+     "cycle": 0.131,
+     "rel_err_pct": 28.73
+    },
+    {
+     "feature": "stops_per_km",
+     "target": 0.7077,
+     "cycle": 0.544,
+     "rel_err_pct": 23.14
+    },
+    {
+     "feature": "P_accel",
+     "target": 29.3908,
+     "cycle": 27.7083,
+     "rel_err_pct": 5.72
+    },
+    {
+     "feature": "P_decel",
+     "target": 28.016,
+     "cycle": 24.0104,
+     "rel_err_pct": 14.3
+    },
+    {
+     "feature": "P_cruise",
+     "target": 23.2034,
+     "cycle": 28.4375,
+     "rel_err_pct": 22.56
+    },
+    {
+     "feature": "v_mean_mov",
+     "target": 9.4957,
+     "cycle": 9.5975,
+     "rel_err_pct": 1.07
+    }
+   ]
+  },
+  "offpeak_rebuild_vs_peak": {
+   "composite_err_pct": 10.54,
+   "feature_rows": [
+    {
+     "feature": "v_mean",
+     "target": 6.6485,
+     "cycle": 7.9198,
+     "rel_err_pct": 19.12
+    },
+    {
+     "feature": "v_max",
+     "target": 29.8485,
+     "cycle": 29.726,
+     "rel_err_pct": 0.41
+    },
+    {
+     "feature": "v_std",
+     "target": 6.8943,
+     "cycle": 8.6573,
+     "rel_err_pct": 25.57
+    },
+    {
+     "feature": "a_max",
+     "target": 1.345,
+     "cycle": 1.4637,
+     "rel_err_pct": 8.82
+    },
+    {
+     "feature": "d_max",
+     "target": 1.4173,
+     "cycle": 1.6618,
+     "rel_err_pct": 17.26
+    },
+    {
+     "feature": "a_pos_mean",
+     "target": 0.4139,
+     "cycle": 0.4267,
+     "rel_err_pct": 3.11
+    },
+    {
+     "feature": "a_neg_mean",
+     "target": -0.4353,
+     "cycle": -0.433,
+     "rel_err_pct": 0.52
+    },
+    {
+     "feature": "P_idle",
+     "target": 21.7814,
+     "cycle": 19.7183,
+     "rel_err_pct": 9.47
+    },
+    {
+     "feature": "a_rms",
+     "target": 0.4201,
+     "cycle": 0.421,
+     "rel_err_pct": 0.21
+    },
+    {
+     "feature": "PKE",
+     "target": 0.1756,
+     "cycle": 0.1379,
+     "rel_err_pct": 21.46
+    },
+    {
+     "feature": "stops_per_km",
+     "target": 0.8983,
+     "cycle": 0.9633,
+     "rel_err_pct": 7.23
+    },
+    {
+     "feature": "P_accel",
+     "target": 27.4446,
+     "cycle": 30.2817,
+     "rel_err_pct": 10.34
+    },
+    {
+     "feature": "P_decel",
+     "target": 25.9649,
+     "cycle": 29.284,
+     "rel_err_pct": 12.78
+    },
+    {
+     "feature": "P_cruise",
+     "target": 23.1747,
+     "cycle": 22.007,
+     "rel_err_pct": 5.04
+    },
+    {
+     "feature": "v_mean_mov",
+     "target": 8.4216,
+     "cycle": 9.8304,
+     "rel_err_pct": 16.73
+    }
+   ]
+  }
+ },
+ "sec13_tehran_cycles_baseline": {
+  "note": "Values quoted from the published abstracts; the full 1 Hz speed traces are not publicly downloadable, so an energy simulation for these cycles cannot be run without fabricating the traces (prohibited by section 32).",
+  "fotouhi_2013_tcdc": {
+   "ref": "Fotouhi, A., Montazeri-Gh, M. (2013). Tehran driving cycle development using the k-means clustering method. Scientia Iranica 20(2), 286-293. DOI 10.1016/j.scient.2013.04.001",
+   "vehicle_class": "private passenger car (city + suburbs)",
+   "duration_s": 1533,
+   "v_mean_kmh": 33.83,
+   "distance_km": 14.41,
+   "P_idle_pct": 15.26
+  },
+  "montazeri_2007": {
+   "ref": "Montazeri-Gh, M., Naghizadeh, M. (2007). Development of the Tehran car driving cycle. Int. J. Environment and Pollution 30(1). DOI 10.1504/IJEP.2007.014506",
+   "vehicle_class": "private passenger car",
+   "duration_s": null,
+   "v_mean_kmh": null,
+   "distance_km": null,
+   "P_idle_pct": null
+  },
+  "mafi_2022": {
+   "ref": "Mafi, S., Kakaee, A.H., Mashadi, B., Moosavian, A., Abdolmajidi, E. (2022). Developing local driving cycle for accurate vehicular CO2 monitoring: A case study of Tehran. Journal of Cleaner Production 331, 130176. DOI 10.1016/j.jclepro.2021.130176",
+   "vehicle_class": "passenger car (CO2 monitoring focus)",
+   "duration_s": null,
+   "v_mean_kmh": null,
+   "distance_km": null,
+   "P_idle_pct": null
+  },
+  "tetdc_1_this_study": {
+   "vehicle_class": "electric taxi (Aion V Plus, transferred pattern)",
+   "duration_s": 1920,
+   "v_mean_kmh": 27.58,
+   "distance_km": 14.71,
+   "P_idle_pct": 20.47
+  }
+ }
+}

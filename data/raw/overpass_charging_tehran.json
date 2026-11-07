@@ -1,0 +1,202 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-11T21:56:50Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 4580509207,
+  "lat": 35.7122497,
+  "lon": 51.3279895,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "Pamchal"
+  }
+},
+{
+  "type": "node",
+  "id": 10974103515,
+  "lat": 35.6913195,
+  "lon": 51.3225192,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114311,
+  "lat": 35.6913391,
+  "lon": 51.3223851,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114312,
+  "lat": 35.6900952,
+  "lon": 51.3219479,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114908,
+  "lat": 35.6914088,
+  "lon": 51.3220283,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114909,
+  "lat": 35.6913826,
+  "lon": 51.3221732,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114910,
+  "lat": 35.6905047,
+  "lon": 51.3216126,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114911,
+  "lat": 35.6903479,
+  "lon": 51.3217306,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 10974114912,
+  "lat": 35.6902411,
+  "lon": 51.3218218,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 11964098657,
+  "lat": 35.7008587,
+  "lon": 51.3366382,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "mapna",
+    "fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12203579356,
+  "lat": 35.7003461,
+  "lon": 51.3868870,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13118834077,
+  "lat": 35.7654276,
+  "lon": 51.4808491,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13316607870,
+  "lat": 35.6606339,
+  "lon": 51.3967393,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "ایستگاه شارژ پایانه معین"
+  }
+},
+{
+  "type": "node",
+  "id": 13316712152,
+  "lat": 35.7497968,
+  "lon": 51.4171521,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "ایستگاه شارژ پارک آب و آتش",
+    "socket:type2": "2",
+    "socket:type2:output": "7.4 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13316719141,
+  "lat": 35.7311376,
+  "lon": 51.5069055,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "ایستگاه شارژ منطقه ۸ شهرداری",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "60 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13374567294,
+  "lat": 35.7008938,
+  "lon": 51.3384544,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "mapna",
+    "fee": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 712601209,
+  "center": {
+    "lat": 35.7466440,
+    "lon": 51.3744265
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "name": "ایستگاه شارژ برقی خودرو"
+  }
+},
+{
+  "type": "way",
+  "id": 1138746191,
+  "center": {
+    "lat": 35.6838554,
+    "lon": 51.4196830
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "operator": "شرکت واحد اتوبوسرانی تهران و حومه;سازمان مدیریت و نظارت بر تاکسیرانی شهرداری تهران",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}

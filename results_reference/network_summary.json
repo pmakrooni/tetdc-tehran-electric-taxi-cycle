@@ -1,0 +1,87 @@
+{
+  "source": "OpenStreetMap via Overpass mirror maps.mail.ru (OSM base 2026-09-11)",
+  "bbox": {
+    "south": 35.45,
+    "west": 51.0,
+    "north": 35.9,
+    "east": 51.75
+  },
+  "files_parsed": [
+    "tehran_major_roads.osm",
+    "tehran_minor_S1.osm",
+    "tehran_minor_S2.osm",
+    "tehran_minor_S3.osm"
+  ],
+  "total_ways_drivable": 124512,
+  "total_nodes_used": 446815,
+  "total_edges": 497863,
+  "total_length_km": 21049.1,
+  "by_highway_class": {
+    "residential": {
+      "edges": 244136,
+      "length_km": 10757.2
+    },
+    "tertiary": {
+      "edges": 74447,
+      "length_km": 2857.4
+    },
+    "secondary": {
+      "edges": 48453,
+      "length_km": 1931.2
+    },
+    "trunk": {
+      "edges": 22447,
+      "length_km": 1505.2
+    },
+    "unclassified": {
+      "edges": 30878,
+      "length_km": 1494.6
+    },
+    "primary": {
+      "edges": 23919,
+      "length_km": 1123.0
+    },
+    "trunk_link": {
+      "edges": 23564,
+      "length_km": 550.0
+    },
+    "motorway": {
+      "edges": 2632,
+      "length_km": 304.2
+    },
+    "living_street": {
+      "edges": 4074,
+      "length_km": 164.8
+    },
+    "primary_link": {
+      "edges": 7307,
+      "length_km": 120.9
+    },
+    "secondary_link": {
+      "edges": 8358,
+      "length_km": 101.3
+    },
+    "motorway_link": {
+      "edges": 2772,
+      "length_km": 90.5
+    },
+    "tertiary_link": {
+      "edges": 4876,
+      "length_km": 48.8
+    }
+  },
+  "oneway_length_km": 8911.3,
+  "oneway_fraction_of_length": 0.423,
+  "named_length_km": 16271.3,
+  "named_fraction_of_length": 0.773,
+  "edges_with_maxspeed": 321831,
+  "maxspeed_kmh": {
+    "min": 5.0,
+    "max": 800.0,
+    "mean": 39.8
+  },
+  "bridge_length_km": 161.4,
+  "tunnel_length_km": 65.4,
+  "random_seed": 42,
+  "edge_length_method": "haversine (WGS84, R=6371008.8 m)"
+}

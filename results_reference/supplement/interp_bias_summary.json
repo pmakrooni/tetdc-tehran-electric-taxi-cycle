@@ -1,0 +1,90 @@
+{
+ "trips_used": 54,
+ "trips_skipped": 4,
+ "total_hours": 20.18166666666667,
+ "total_km_true": 723.7217652777779,
+ "distance_km": {
+  "true_mean": 15.442703235177843,
+  "rec_mean": 15.360458965271457,
+  "rel_bias_pct_median": -0.6535346906333568,
+  "rel_bias_pct_p10": -2.502557008366652,
+  "rel_bias_pct_p90": 0.7381379693281089
+ },
+ "v_mean_kmh": {
+  "true_mean": 35.8603566906158,
+  "rec_mean": 35.65978402997541,
+  "rel_bias_pct_median": -0.6535346906333627,
+  "rel_bias_pct_p10": -2.5025570083666344,
+  "rel_bias_pct_p90": 0.7381379693281013
+ },
+ "v_max_kmh": {
+  "true_mean": 87.6232742863435,
+  "rec_mean": 90.16948883732788,
+  "rel_bias_pct_median": 2.2220642303201465,
+  "rel_bias_pct_p10": -1.041492994528522,
+  "rel_bias_pct_p90": 9.628675365841156
+ },
+ "a_max": {
+  "true_mean": 2.7478246208054613,
+  "rec_mean": 2.532896631185798,
+  "rel_bias_pct_median": -3.078566059241261,
+  "rel_bias_pct_p10": -36.22946736640526,
+  "rel_bias_pct_p90": 23.758853956815056
+ },
+ "d_max": {
+  "true_mean": -3.211195309656423,
+  "rec_mean": -2.9626060978500663,
+  "rel_bias_pct_median": 1.243614324074327,
+  "rel_bias_pct_p10": -22.02061840716633,
+  "rel_bias_pct_p90": 32.1542678903516
+ },
+ "a_rms": {
+  "true_mean": 0.6644742795509311,
+  "rec_mean": 0.5383931774352307,
+  "rel_bias_pct_median": -17.322794678460422,
+  "rel_bias_pct_p10": -41.54919321210365,
+  "rel_bias_pct_p90": -1.2699256984903553
+ },
+ "a_pos_mean": {
+  "true_mean": 0.5931071598464525,
+  "rec_mean": 0.47944792226599187,
+  "rel_bias_pct_median": -17.796061181301127,
+  "rel_bias_pct_p10": -35.93076944074428,
+  "rel_bias_pct_p90": -3.8182175152786266
+ },
+ "P_idle": {
+  "true_mean": 18.57984419302447,
+  "rec_mean": 12.922894816527654,
+  "rel_bias_pct_median": -30.525039311319,
+  "rel_bias_pct_p10": -52.10638362580213,
+  "rel_bias_pct_p90": -17.370402298850582
+ },
+ "RPA": {
+  "true_mean": 0.2077874401685772,
+  "rec_mean": 0.17486567851842913,
+  "rel_bias_pct_median": -10.237741742323447,
+  "rel_bias_pct_p10": -36.666851535972484,
+  "rel_bias_pct_p90": 1.743315915048544
+ },
+ "kwh100_summer": {
+  "true_mean": 23.148788809390922,
+  "rec_mean": 21.8527731724994,
+  "rel_bias_pct_median": -4.312011340687604,
+  "rel_bias_pct_p10": -13.862123184979088,
+  "rel_bias_pct_p90": 0.23251792017000572
+ },
+ "kwh100_winter": {
+  "true_mean": 22.515368389020644,
+  "rec_mean": 21.21313685931749,
+  "rel_bias_pct_median": -4.4894064743480655,
+  "rel_bias_pct_p10": -14.36172305212149,
+  "rel_bias_pct_p90": 0.24487976353546057
+ },
+ "kwh100_shoulder": {
+  "true_mean": 19.03155607698414,
+  "rec_mean": 17.69513713681698,
+  "rel_bias_pct_median": -5.295793142106929,
+  "rel_bias_pct_p10": -18.232389762705633,
+  "rel_bias_pct_p90": 0.3227521400819181
+ }
+}

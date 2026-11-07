@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the article (Makrooni et al., Decomposing the Electric-Taxi Range Gap in Tehran with an Open-Data Digital Twin, submitted to Transportation Research Part D) and this repository."
+title: "TETDC: Tehran Electric Taxi Driving Cycle - code, data and verified results"
+authors:
+  - family-names: "Makrooni"
+    given-names: "Pouria"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   <- add after registering at orcid.org
+    affiliation: "School of Automotive Engineering, Iran University of Science and Technology"
+  - family-names: "Masih-Tehrani"
+    given-names: "Masoud"
+    affiliation: "School of Automotive Engineering, Iran University of Science and Technology"
+  # further co-authors to be added
+version: 1.2.0
+date-released: "2026-11-07"
+license: MIT
+repository-code: "https://github.com/pmakrooni/tetdc-tehran-electric-taxi-cycle"
+keywords: [electric taxi, driving cycle, digital twin, energy consumption, topography, charging infrastructure, Tehran]
